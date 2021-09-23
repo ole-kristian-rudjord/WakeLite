@@ -5,11 +5,12 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
-  line-height: 1.8rem;
+  line-height: 2em;
 }
 
 body {
-  padding-top: 10vh;
+  padding-top: 7vh;
+  overflow-x: hidden;
 }
 
 nav {
@@ -17,17 +18,23 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 10vh;
+  height: 7vh;
   width: 100%;
   border-bottom: orange solid 2px;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 .Logo {
   margin-left: 10%;
 }
 .Logo img {
-  width: 8vh;
+  width: 6vh;
+  border-radius: 50%;
+  transition: 1s;
+}
+.Logo img:hover {
+  box-shadow: 0 0 15px 10px yellow;
 }
 .Logo a {
   font-size: 1.5rem;
@@ -38,7 +45,7 @@ nav {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  transition: background-color 0.6s, color 0.3s;
 }
 .Logo a:hover {
   color: white;
@@ -61,7 +68,7 @@ nav li a {
   color: black;
   padding: 8px 10px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: background-color 0.6s, color 0.3s;
 }
 nav li a:hover {
   color: white;
@@ -72,7 +79,7 @@ nav li a:active, a:visited {
 }
 
 .Start-Div {
-  height: 90vh;
+  height: 93vh;
   width: 100%;
 }
 .Start-Div img {
@@ -86,30 +93,109 @@ nav li a:active, a:visited {
   position: absolute;
   color: white;
   font-weight: 800;
+  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
   margin-top: 10%;
   margin-left: 64%;
 }
 
+#Divider1 {
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+  margin-top: -4vh;
+  transform: rotate(-1deg);
+  background-color: orange;
+}
+
 .WhoAreWe-Div {
-  height: 90vh;
+  height: 93vh;
   width: 100%;
 }
-#p1-div {
+#Div1 {
   position: absolute;
-  width: 25%;
-  margin-left: 60%;
-  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 11vh;
+}
+#Div1 img {
+  width: 450px;
+  margin-left: 45vh;
+}
+#p1-div {
+  width: 35vh;
+  margin-left: 30vh;
 }
 #p1 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
-#p2and3-div {
+#Div2 {
   position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 50vh;
+}
+#p-divs {
   width: 30%;
-  margin-top: 23%;
-  margin-left: 15%;
+  margin-left: 40vh;
 }
 #p2 {
   font-size: 1.1rem;
+  margin-bottom: 1vh;
+}
+#p3 {
+  margin-bottom: 1vh;
+}
+#p4 {
+  font-size: 0.9rem;
+}
+#Div2 img {
+  width: 400px;
+  margin-left: 15vh;
+}
+
+#Divider2 {
+  position: absolute;
+  width: 100%;
+  height: 6vh;
+  margin-top: -2vh;
+  transform: rotate(-1deg);
+  background-color: orange;
+}
+
+.OurMission-Div {
+  height: 93vh;
+  width: 100%;
+}
+.OurMission-Div1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 22vh;
+  margin-left: 48vh;
+}
+#OurMission-p1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5vh;
+
+}
+#OurMission-p2 {
+  font-size: 1.1rem;
+}
+.OurMission-IMGs {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 13vh;
+  margin-left: 53%;
+}
+.OurMission-IMGs img {
+  width: 500px;
+}
+#OurMission-img1 {
+  margin-bottom: 2vh;
 }
