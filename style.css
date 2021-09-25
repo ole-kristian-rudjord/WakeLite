@@ -250,10 +250,19 @@ h1 {
   color: black;
 }
 .flip-card-back {
-  background-color: rgb(174, 210, 247);
+  background-color: orange;
   color: white;
   transform: rotateY(180deg);
 }
 .social {
-  font-size: 48px;
+  font-size: 68px;
+}
+.social a {
+  background-color: orange;
+  transition: 0.3s linear;
+  border-radius: 10%;
+}
+.social a:hover {
+  border-radius: 50%;
+  background-color: yellow;
 }
