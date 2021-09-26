@@ -318,7 +318,8 @@ nav li a:active, a:visited {
   margin-top: 1%;
   margin-bottom: 5%;
   border: orange solid 1px;
-  background-color: rgba(255, 166, 0, 0.4);
+  border-radius: 8px;
+  background-color: rgba(255, 166, 0, 0.1);
 }
 .Contact-Form-Header {
   font-size: 2rem;
@@ -327,25 +328,20 @@ nav li a:active, a:visited {
 .Contact-Form input, textarea {
   font-size: 1rem;
   width: 70%;
-  padding: 20px;
-  padding-bottom: 18px;
+  padding: 16px;
   background-color: white;
-  outline: orange solid 1px;
-  border: none;
-  border-bottom: transparent solid 2px;
+  outline: none;
+  border: orange solid 1px;
+  border-radius: 8px;
   transition: 0.2s ease-in-out;
 }
-.Contact-Form input:focus, textarea:focus {
-  border-bottom: orange solid 2px;
+.Contact-Form input:focus, textarea:focus, .Contact-Submit input:hover {
+  border: black solid 1px;
 }
 .Contact-Submit {
   text-align: center;
   width: 30%;
 }
-.Contact-Submit input:hover {
-  border-bottom: orange solid 2px;
-}
-
 .Footer {
   display: flex;
   bottom: 0;
