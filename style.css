@@ -369,3 +369,9 @@ nav li a:active, a:visited {
 .Footer-Div a:visited a:active {
   color: inherit;
 }
+/* Prøvde denne, men hele linja endrer seg når et ikon blåses opp pga 
+forholdet dem imellom
+.Footer-Socials a:hover {
+  font-size: 1.3rem;
+}
+*/
