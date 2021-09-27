@@ -100,7 +100,7 @@ nav li a:active, a:visited {
   transition: 1s;
 }
 .Start-Div h1:hover {
-  text-shadow: 1px -1px orange, 2px -1px orange, 3px -2px orange, 4px -2px orange, 5px -3px orange, 6px -3px orange, 7px -4px orange, 20px -4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px -1px orange, 2px -1px orange, 3px -2px orange, 4px -2px orange, 5px -3px orange, 6px -3px orange, 7px -4px orange, 18px -8px rgba(0, 0, 0, 0.3);
 }
 
 #Divider1 {
