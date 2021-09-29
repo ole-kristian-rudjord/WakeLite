@@ -192,7 +192,6 @@ nav li a:active, a:visited {
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
-
 .TheCrew-Div {
   padding-bottom: 50px;
 }
@@ -248,7 +247,7 @@ nav li a:active, a:visited {
   transform: rotateY(180deg);
 }
 .social {
-  font-size: 68px;
+  font-size: 42px;
 }
 .social a {
   background-color: orange;
