@@ -107,7 +107,7 @@ nav li a:active, a:visited {
   height: 8vh;
   margin-top: -4vh;
   margin-bottom: 18vh;
-  transform: rotate(-1deg);
+  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
@@ -143,7 +143,7 @@ nav li a:active, a:visited {
   height: 6vh;
   margin-top: 18vh;
   margin-bottom: 18vh;
-  transform: rotate(-1deg);
+  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
@@ -188,7 +188,7 @@ nav li a:active, a:visited {
   height: 6vh;
   margin-top: 18vh;
   margin-bottom: 18vh;
-  transform: rotate(-1deg);
+  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
@@ -264,7 +264,7 @@ nav li a:active, a:visited {
   height: 6vh;
   margin-top: 18vh;
   margin-bottom: 18vh;
-  transform: rotate(-1deg);
+  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
