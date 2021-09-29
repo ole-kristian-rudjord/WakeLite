@@ -200,6 +200,12 @@ nav li a:active, a:visited {
   margin-top: 5%;
   text-align: center;
 }
+.flip-card-back h1 {
+  font-size: 1.7rem;
+}
+.flip-card-back p {
+  font-size: 1.2rem;
+}
 .cardstacktop {
   display: flex;
   margin: 10px auto 20px auto;
