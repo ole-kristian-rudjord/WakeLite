@@ -205,7 +205,6 @@ nav li a:active, a:visited {
 .cardstackbot {
   display: flex;
   margin: auto;
-  width: 100%;
   justify-content: center;
   margin-top: 60px;
   
