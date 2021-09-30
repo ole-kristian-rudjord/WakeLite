@@ -333,6 +333,11 @@ nav li a:active, a:visited {
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
+hr {
+  border: none;
+  margin-top: -18vh;
+}
+
 /*----------------------
     Start of Contact
 ----------------------*/
@@ -345,7 +350,7 @@ nav li a:active, a:visited {
 .Contact-Header2 {
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: 3vh;
+  line-height: 2rem;
 }
 .Contact-Header2 a {
   color: black;
@@ -361,10 +366,10 @@ nav li a:active, a:visited {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 550px;
+  height: 520px;
   padding: 20px 36px;
   margin: auto;
-  margin-top: 3vh;
+  margin-top: 2vh;
   margin-bottom: 12vh;
   /* border: rgba(0, 0, 0, 0.3) solid 1px;
   border-radius: 8px;
@@ -384,7 +389,7 @@ nav li a:active, a:visited {
   border-radius: 8px;
   transition: 0.1s;
 }
-.Contact-Form input:not(.Contact-Submit):hover, textarea:focus, textarea:hover, .Contact-Submit input:hover {
+.Contact-Form input:not(.Contact-Submit input):focus, textarea:focus, .Contact-Submit input:hover {
   border: orange solid 1px;
   box-shadow: orange 0 0 0 1px;
 }
