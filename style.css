@@ -135,7 +135,8 @@ nav li a:active, a:visited {
     Start of Who Are We
 ----------------------*/
 .WhoAreWe-Full {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -144,8 +145,7 @@ nav li a:active, a:visited {
 .WhoAreWe-Div {
   display: grid;
   grid-template-columns: 30% 30%;
-  grid-template-rows: 35vh 35vh;
-  gap: 20px 20px;
+  gap: 40px 40px;
   justify-content: center;
 }
 .WhoAreWe-Section {
@@ -186,7 +186,8 @@ nav li a:active, a:visited {
     Start of Our Mission
 ----------------------*/
 .OurMission-Full {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -339,7 +340,8 @@ nav li a:active, a:visited {
     Start of Contact
 ----------------------*/
 .Contact-Full {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
