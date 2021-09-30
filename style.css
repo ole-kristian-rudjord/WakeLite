@@ -13,15 +13,15 @@ body {
 }
 
 
-/*---LIST OF SECTIONS--- 
-Navbar (nav)
-WakeLite (.Start-Div)
-Who Are We (.WhoAreWe-Div)
-Our Mission (.OurMission-Div)
-About Us (.TheCrew-Div)
-Contact (.Contact-Header1)
-Footer (.Footer)
----------------------*/
+/*---LIST OF SECTIONS---
+Navbar
+WakeLite
+Who Are We
+Our Mission
+About Us
+Contact
+Footer
+----------------------*/
 
 
 /*----------------------
@@ -127,20 +127,24 @@ nav li a:active, a:visited {
 
 #Divider1 {
   width: 100%;
-  height: 8vh;
-  margin-top: -4vh;
-  margin-bottom: 18vh;
-  /* transform: rotate(-1deg); */
+  height: 6vh;
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
 /*----------------------
     Start of Who Are We
 ----------------------*/
+.WhoAreWe-Full {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .WhoAreWe-Div {
   display: grid;
   grid-template-columns: 30% 30%;
-  grid-template-rows: 40vh;
+  grid-template-rows: 35vh 35vh;
   gap: 20px 20px;
   justify-content: center;
 }
@@ -175,30 +179,36 @@ nav li a:active, a:visited {
 #Divider2 {
   width: 100%;
   height: 6vh;
-  margin-top: 18vh;
-  margin-bottom: 18vh;
-  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
 /*----------------------
     Start of Our Mission
 ----------------------*/
+.OurMission-Full {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .OurMission-Div {
   display: grid;
-  grid-template-columns: 30% 30%;
-  gap: 0 20px;
+  grid-template-columns: 50% 50%;
+  gap: 0px 30px;
   justify-content: center;
 }
 .OurMission-Sections {
   margin: auto;
 }
-#OurMission-Section1 {
-  grid-row: 1/3;
+.OurMission-IMG-Div {
+  display: flex;
+  flex-direction: column;
 }
 .OurMission-Div img {
   width: 100%;
   max-width: 500px;
+  margin: 20px 0;
 }
 .OurMission-Div h1 {
   font-size: 1.2rem;
@@ -230,9 +240,6 @@ nav li a:active, a:visited {
 #Divider3 {
   width: 100%;
   height: 6vh;
-  margin-top: 18vh;
-  margin-bottom: 18vh;
-  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
@@ -256,7 +263,6 @@ nav li a:active, a:visited {
   margin: auto;
   justify-content: center;
   margin-top: 60px;
-  
 }
 .flip-card {
   background-color: transparent;
@@ -293,7 +299,6 @@ nav li a:active, a:visited {
 .flip-card-back {
   border: orange solid 2px;
   border-radius: 10px;
-  /* background-color: orange; */
   color: white;
   transform: rotateY(180deg);
 }
@@ -311,7 +316,6 @@ nav li a:active, a:visited {
   font-size: 42px;
 }
 .social a {
-  /* background-color: orange; */
   padding: 0 8px;
   transition: 0.3s linear;
   border-radius: 10px;
@@ -328,22 +332,21 @@ nav li a:active, a:visited {
   width: 100%;
   height: 6vh;
   margin-top: 18vh;
-  margin-bottom: 18vh;
-  /* transform: rotate(-1deg); */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
-}
-
-hr {
-  border: none;
-  margin-top: -18vh;
 }
 
 /*----------------------
     Start of Contact
 ----------------------*/
+.Contact-Full {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .Contact-Header1 {
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 1vh;
   font-size: 1.5rem;
 }
@@ -367,13 +370,9 @@ hr {
   align-items: center;
   width: 400px;
   height: 520px;
-  padding: 20px 36px;
+  padding: 0 16px;
   margin: auto;
-  margin-top: 2vh;
-  margin-bottom: 12vh;
-  /* border: rgba(0, 0, 0, 0.3) solid 1px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.05); */
+  margin-top: 4vh;
 }
 .Contact-Form-Header {
   font-size: 1.5rem;
@@ -412,7 +411,7 @@ hr {
   bottom: 0;
   width: 100%;
   height: 8vh;
-  margin-top: auto;
+  /* margin-top: auto; */
   background-color: white;
   border-top: orange solid 2px;
 }
