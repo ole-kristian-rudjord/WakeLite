@@ -199,13 +199,16 @@ nav li a:active, a:visited {
 }
 .cardstacktop {
   display: flex;
-  margin: 10px auto 20px auto;
-  width: 1020px;
+  justify-content: center;
+  margin-top: 10px;
 }
 .cardstackbot {
   display: flex;
-  width: 680px;
-  margin: 60px auto 30px auto;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  
 }
 .flip-card {
   background-color: transparent;
@@ -256,6 +259,7 @@ nav li a:active, a:visited {
   color: black;
 }
 .social {
+  margin-top: 35px;
   font-size: 42px;
 }
 .social a {
