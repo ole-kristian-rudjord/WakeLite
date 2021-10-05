@@ -12,6 +12,9 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
 
 /*---LIST OF SECTIONS---
 Navbar
