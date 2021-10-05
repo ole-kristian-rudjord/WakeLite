@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,17 @@
   <title>Wake Lite</title>
 </head>
 <body>
-  <nav>
+  <nav class="Navbar">
     <div class="Logo">
       <a href="#top"><img src="img/Logo.png" alt="Logo">&#160Wake Lite</a>
     </div>
-    <ul>
+    <ul class="Navbar-ul">
       <li><a href="#WhoAreWe">Who Are We?</a></li>
       <li><a href="#OurMission">Our Mission</a></li>
       <li><a href="#Divider3">About Us</a></li>
       <li><a href="#Contact">Contact</a></li>
     </ul>
+    <!-- <button class="Navbar-Drop-Down" onclick="myFunction()"><img src="img/Logo.png" alt="Drop-Down"></button> -->
   </nav>
 
   <div class="Start-Div">
@@ -38,7 +40,7 @@
       <div class="WhoAreWe-Section">
         <p id="WhoAreWe-p-Start">We at Wake Lite seek to increase<br>everyday joy through ensuring<br>good sleep and wake-up routines</p>
       </div>
-      <div class="WhoAreWe-Section">
+      <div class="WhoAreWe-Section" id="WhoAreWe-Section3">
         <p id="WhoAreWe-p1">
           The Wake Lite Bulb will slowly brighten up in the morning to simulate genuine sunlight and prevents sudden wake-ups that disrupt the natural sleep cycle.
         </p>
@@ -49,12 +51,11 @@
           <a href="https://www.wellandgood.com/do-sunrise-alarms-work/">-Magner, E. (2019)</a>
         </p>
       </div>
-      <div class="WhoAreWe-Section">
+      <div class="WhoAreWe-Section" id="WhoAreWe-Section4">
         <img src="img/Prototype2.jpg" alt="Prototype2">
       </div>
     </div>
   </div>
-  
   
   <div class="Dividers" id="Divider2"></div>
 
@@ -75,7 +76,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="Dividers" id="Divider3"></div>
 
@@ -201,9 +201,10 @@
   <div class="Dividers" id="Divider4"></div>
 
   <div class="Contact-Full" id="Contact">
-    <div class="Contact-Div">
-      <h1 class="Contact-Header1">Want to get in contact with us?</h1>
-      <h2 class="Contact-Header2">Send us an Email through the contact form below<br>or call us at <a href="tel:+47939-20-001">(+47) 939 20 001</a> <span>(9am - 7pm)</span></h2>
+    <!-- <div class="Contact-Div"> -->
+      <h1 class="Contact-Header1"><span>Want to get in</span> <span>contact with us?</span></h1>
+      <h2 class="Contact-Header2"><span>Send us an Email through</span> <span>the contact form below</span></h2>
+      <h3 class="Contact-Header3"><span>or call us at </span> <span><a href="tel:+47939-20-001">(+47) 939 20 001</a> <span id="phone-span">(9am-7pm)</span></span></h3>
       <form action="#Contact" class="Contact-Form">
           <input type="text" name="Name"  id="Input-Name" placeholder="Name:">
           <input type="text" name="Email" id="Input-Email" placeholder="Email:">
@@ -212,11 +213,10 @@
               <input type="submit" value="Submit">
           </div>
       </form>
-  </div>
+    <!-- </div> -->
   </div>
   
   <footer class="Footer">
-    <div class="Footer-Full">
       <div class="Footer-Div">
         <p>Address:&#160&#160</p>
         <a href="https://www.google.com/maps/place/Oslo+Metropolitan+University/@59.9206912,10.7349496,16z/data=!4m9!1m2!2m1!1sOslomet!3m5!1s0x46416e7913e2a529:0xd5e2f570195d26b4!8m2!3d59.9211067!4d10.7330359!15sCgdPc2xvbWV0kgEKdW5pdmVyc2l0eQ" target="_blank">ExampleAddress</a>
@@ -238,7 +238,6 @@
             <li><a href="#"><i class="fa fa-instagram" style="color: #8900be;"></i></a></li>
           </ul>
       </div>
-    </div>
   </footer>
 </body> 
 </html>

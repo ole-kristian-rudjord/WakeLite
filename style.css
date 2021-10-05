@@ -27,7 +27,7 @@ Footer
 /*----------------------
     Start of Navbar
 ----------------------*/
-nav {
+.Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,14 +68,14 @@ nav {
 .Logo a:active, a:visited {
   color: inherit;
 }
-nav ul {
+.Navbar-ul {
   margin-right: 10%;
 }
-nav li {
+.Navbar li {
   list-style: none;
   display: inline-block;
 }
-nav li a {
+.Navbar li a {
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
@@ -84,13 +84,26 @@ nav li a {
   border-radius: 20px;
   transition: background-color 0.6s, color 0.3s;
 }
-nav li a:hover {
+.Navbar li a:hover {
   color: white;
   background-color: orange;
 }
-nav li a:active, a:visited {
+.Navbar li a:active, a:visited {
   color: inherit;
 }
+
+/* .Navbar-Drop-Down {
+  width: 5vh;
+  margin-right: 10%;
+  outline: none;
+  border: none;
+  background: inherit;
+  display: none;
+  cursor: pointer;
+}
+.Navbar-Drop-Down img {
+  width: 100%;
+} */
 /*----------------------
     End of Navbar
 ----------------------*/
@@ -198,6 +211,7 @@ nav li a:active, a:visited {
   grid-template-columns: 50% 50%;
   gap: 0px 30px;
   justify-content: center;
+  margin: 0 50px;
 }
 .OurMission-Sections {
   margin: auto;
@@ -344,24 +358,44 @@ nav li a:active, a:visited {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .Contact-Header1 {
   text-align: center;
+  margin: 0 30px;
   margin-bottom: 1vh;
   font-size: 1.5rem;
+}
+.Contact-Header1 span {
+  display: inline-block;
 }
 .Contact-Header2 {
   text-align: center;
   font-size: 1.2rem;
   line-height: 2rem;
+  margin: 0 50px;
 }
-.Contact-Header2 a {
+.Contact-Header2 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 120px;
+}
+.Contact-Header3 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 a {
   color: black;
   text-decoration: none;
 }
-.Contact-Header2 span {
+.Contact-Header3 #phone-span {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -370,15 +404,12 @@ nav li a:active, a:visited {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   height: 520px;
   padding: 0 16px;
   margin: auto;
+  margin: 0 50px;
   margin-top: 4vh;
-}
-.Contact-Form-Header {
-  font-size: 1.5rem;
-  margin-top: 20px;
 }
 .Contact-Form input, textarea {
   font-size: 1rem;
@@ -397,6 +428,7 @@ nav li a:active, a:visited {
 .Contact-Submit {
   text-align: center;
   width: 30%;
+  min-width: 100px;
 }
 .Contact-Submit input {
   cursor: pointer;
@@ -410,18 +442,13 @@ nav li a:active, a:visited {
 ----------------------*/
 .Footer {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   bottom: 0;
   width: 100%;
   height: 8vh;
-  /* margin-top: auto; */
   background-color: white;
   border-top: orange solid 2px;
-}
-.Footer-Full {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
 }
 .Footer-Div {
   display: inline-flex;
@@ -452,6 +479,109 @@ nav li a:active, a:visited {
 #Footer-Socials a:hover {
   background-color: yellow;
 }
+
+@media only screen and (max-width: 1150px) {
+  .Footer {
+    flex-direction: column;
+    height: 30vh;
+  }
+}
 /*----------------------
     End of Footer
 ----------------------*/
+
+@media only screen and (max-width: 850px) {
+  .Start-Div h1 {
+    white-space: nowrap;
+    margin-top: 120px;
+    margin-left: 55%;
+    transform: translateX(-50%);
+  }
+
+  .WhoAreWe-Full {
+    margin: 10vh 0;
+  }
+  .WhoAreWe-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+  #WhoAreWe-Section3 {
+    max-width: 330px;
+  }
+  #WhoAreWe-Section4 {
+    display: none;
+  } 
+
+  .OurMission-Full {
+    margin: 12vh 0;
+  }
+  .OurMission-Div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .OurMission-Div img {
+    max-width: 350px;
+  }
+
+  .TheCrew-Div {
+    margin: 12vh 0;
+  }
+
+  .Contact-Full {
+    margin: 10vh 0;
+  }
+  .Contact-Header1 {
+    margin-bottom: 2vh;
+  }
+  .Contact-Header2, .Contact-Header3 {
+    font-size: 1rem;
+  }
+  .Contact-Header3 a {
+    text-decoration: underline;
+  }
+  .Contact-Form {
+    height: 400px;
+  }
+  .Contact-Form input, textarea {
+    font-weight: 400;
+  }
+  .Contact-Form textarea {
+    height: 20vh;
+  }
+
+
+  /* .Navbar-ul {
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 40%;
+    background-color: orange;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 99;
+    display: flex;
+  }
+  .Navbar-Drop-Down {
+    display: block;
+  }
+  .Navbar-ul.show {
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
+     align-items: center;
+    height: 100vh;
+    width: 40%;
+    background-color: orange;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 99;
+    display: flex;
+  } */
+}
