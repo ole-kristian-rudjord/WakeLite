@@ -71,7 +71,7 @@ Footer
 .Logo a:active, a:visited {
   color: inherit;
 }
-.Navbar-ul {
+#Navbar-ul {
   margin-right: 10%;
 }
 .Navbar li {
@@ -95,18 +95,12 @@ Footer
   color: inherit;
 }
 
-/* .Navbar-Drop-Down {
+#Navbar-Drop-Down {
   width: 5vh;
   margin-right: 10%;
-  outline: none;
-  border: none;
-  background: inherit;
   display: none;
   cursor: pointer;
 }
-.Navbar-Drop-Down img {
-  width: 100%;
-} */
 /*----------------------
     End of Navbar
 ----------------------*/
@@ -556,24 +550,39 @@ Footer
   }
 
 
-  /* .Navbar-ul {
+  #Navbar-ul {
     position: absolute;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 40%;
+    height: 93vh;
+    width: 50%;
     background-color: orange;
     right: 0;
-    top: 0;
+    top: 7vh;
     margin: 0;
-    z-index: 99;
-    display: flex;
+    display: none;
   }
-  .Navbar-Drop-Down {
+  #Navbar-Drop-Down {
     display: block;
   }
-  .Navbar-ul.show {
+  #Navbar-ul.Navbar-active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .Navbar-ul.show {
     position: absolute;
     justify-content: space-evenly;
     flex-direction: column;
@@ -585,6 +594,6 @@ Footer
     top: 0;
     margin: 0;
     z-index: 99;
-    display: flex;
-  } */
+    display: flex; 
+  }*/
 }
