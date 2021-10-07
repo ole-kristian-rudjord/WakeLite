@@ -16,6 +16,7 @@ html {
   overflow-x: hidden;
 }
 
+
 /*---LIST OF SECTIONS---
 Navbar
 WakeLite
@@ -362,6 +363,7 @@ Footer
 .Contact-Header1 {
   text-align: center;
   margin: 0 30px;
+  margin-top: 8vh;
   margin-bottom: 1vh;
   font-size: 1.5rem;
 }
@@ -429,6 +431,19 @@ Footer
 }
 .Contact-Submit input {
   cursor: pointer;
+}
+#Contact-Response {
+  padding: 12px 18px;
+  margin-top: 15px;
+  background-color: orange;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
+}
+#Contact-Response.Response-Active {
+  opacity: 100%;
+  visibility: visible;
 }
 /*----------------------
     End of Contact
@@ -561,39 +576,15 @@ Footer
     right: 0;
     top: 7vh;
     margin: 0;
-    display: none;
+    display: flex;
+    transform: translateX(100%); /*will be detected by screen readers since the content is still displayed as flex. It is only pushed out of the screen, not actually gone*/
+    transition: 0.5s ease-in-out;
   }
   #Navbar-Drop-Down {
     display: block;
   }
   #Navbar-ul.Navbar-active {
-    display: flex;
+    /* display: flex; */
     transform: translateX(0);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-  /* .Navbar-ul.show {
-    position: absolute;
-    justify-content: space-evenly;
-    flex-direction: column;
-     align-items: center;
-    height: 100vh;
-    width: 40%;
-    background-color: orange;
-    right: 0;
-    top: 0;
-    margin: 0;
-    z-index: 99;
-    display: flex; 
-  }*/
 }

@@ -4,6 +4,17 @@ window.onload = function() {
     const navbarUl = document.getElementById('Navbar-ul');
 
     dropDown.addEventListener('click', () => {
-    navbarUl.classList.toggle('Navbar-active');
+        navbarUl.classList.toggle('Navbar-active');
     });
+
+    
+    const contactSubmit = document.getElementById('Contact-Submit');
+    const contactResponse = document.getElementById('Contact-Response');
+
+    contactSubmit.addEventListener('click', () => {
+        contactResponse.classList.add('Response-Active');
+        setTimeout(() => {
+            contactResponse.classList.remove('Response-Active');
+        }, 4000);
+    });s
 };
