@@ -16,5 +16,5 @@ window.onload = function() {
         setTimeout(() => {
             contactResponse.classList.remove('Response-Active');
         }, 4000);
-    });s
+    });
 };
