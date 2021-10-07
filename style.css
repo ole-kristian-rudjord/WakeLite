@@ -437,11 +437,14 @@ Footer
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.8s;
+  transition: 1s;
 }
 #Contact-Response.Response-Active {
   opacity: 100%;
   visibility: visible;
+}
+#Contact-Reset {
+  display: none;
 }
 /*----------------------
     End of Contact
@@ -480,14 +483,15 @@ Footer
   display: inline-flex;
 }
 #Footer-Socials a {
+  font-size: 1.1rem;
   padding: 2px 5px;
   margin: 0 2px;
   border-radius: 8px;
+  border: transparent solid 2px;
   transition: 0.2s;
-  color: black;
 }
 #Footer-Socials a:hover {
-  background-color: yellow;
+  border: orange solid 2px; 
 }
 
 @media only screen and (max-width: 1150px) {

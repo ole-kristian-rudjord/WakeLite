@@ -19,12 +19,13 @@ window.onload = function() {
             navbarUl.classList.remove('Navbar-active2');
         });
     };
-
     
-    const contactSubmit = document.getElementById('Contact-Submit');
+    const contactSubmit = document.getElementById('Contact-Form');
     const contactResponse = document.getElementById('Contact-Response');
+    const reset = document.getElementById('Contact-Reset');
 
-    contactSubmit.addEventListener('click', () => {
+    contactSubmit.addEventListener('submit', () => {
+        reset.click();
         contactResponse.classList.add('Response-Active');
         setTimeout(() => {
             contactResponse.classList.remove('Response-Active');
