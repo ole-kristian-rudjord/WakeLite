@@ -45,6 +45,7 @@ Footer
 }
 .Logo {
   margin-left: 10%;
+  white-space: nowrap;
 }
 .Logo img {
   width: 6vh;
@@ -97,10 +98,7 @@ Footer
 }
 
 #Navbar-Drop-Down {
-  width: 5vh;
-  margin-right: 10%;
   display: none;
-  cursor: pointer;
 }
 /*----------------------
     End of Navbar
@@ -503,6 +501,44 @@ Footer
 ----------------------*/
 
 @media only screen and (max-width: 850px) {
+  .Logo {
+    display: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #Navbar-ul {
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 93vh;
+    width: 50%;
+    background-color: orange;
+    right: 0;
+    top: 7vh;
+    margin: 0;
+    transform: translateX(100%); 
+    display: none;
+    transition: 0.4s ease-in-out;
+  }
+  #Navbar-ul.Navbar-active {
+    display: flex;
+  }
+  #Navbar-ul.Navbar-active2 {
+    transform: translateX(0);
+  }
+  .Navbar li a {
+    padding: 25px;
+  }
+  #Navbar-Drop-Down {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    right: 0;
+    padding: 18px;
+    width: 28px;
+  }
+
   .Start-Div h1 {
     white-space: nowrap;
     margin-top: 120px;
@@ -565,26 +601,4 @@ Footer
   }
 
 
-  #Navbar-ul {
-    position: absolute;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    height: 93vh;
-    width: 50%;
-    background-color: orange;
-    right: 0;
-    top: 7vh;
-    margin: 0;
-    display: flex;
-    transform: translateX(100%); /*will be detected by screen readers since the content is still displayed as flex. It is only pushed out of the screen, not actually gone*/
-    transition: 0.5s ease-in-out;
-  }
-  #Navbar-Drop-Down {
-    display: block;
-  }
-  #Navbar-ul.Navbar-active {
-    /* display: flex; */
-    transform: translateX(0);
-  }
 }
