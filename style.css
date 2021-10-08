@@ -16,7 +16,6 @@ html {
   overflow-x: hidden;
 }
 
-
 /*---LIST OF SECTIONS---
 Navbar
 WakeLite
@@ -103,6 +102,27 @@ Footer
 /*----------------------
     End of Navbar
 ----------------------*/
+
+
+.Button-Skip-Up {
+  position: fixed;
+  margin: 12px 8px;
+  border-radius: 16px;
+  background-color: orange;
+  bottom: 0;
+  right: 0;
+  border: rgb(255, 150, 0) solid 2px;
+}
+.Button-Skip-Up img {
+  padding: 8px;
+  width: 24px;
+  transform: rotate(-90deg);
+  filter: invert(100%);
+  transition: 0.2s;
+}
+.Button-Skip-Up img:hover {
+  width: 30px;
+}
 
 /*----------------------
     Start of WakeLite
