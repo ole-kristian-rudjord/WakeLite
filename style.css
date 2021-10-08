@@ -109,28 +109,31 @@ Footer
 ----------------------*/
 .Start-Div {
   height: 100vh;
-  width: 100%;
-  background: url(img/MainImage.png) fixed;
+  /* background: url(img/MainImage.png) fixed no-repeat; */
 }
-/* .Start-Div img {
+.Start-Div img {
   object-fit: cover;
+  position: fixed;
   width: 100%;
   height: 100%;
-} */
+  z-index: -2;
+}
 .Start-Div h1 {
   font-size: 2.8rem;
   line-height: 3rem;
-  position: absolute;
+  position: fixed;
   color: white;
   font-weight: 800;
   text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
   margin-top: 10%;
   margin-left: 64%;
-  transition: 1s;
+  /* transition: 1s; */
+  z-index: -1;
 }
-.Start-Div h1:hover {
+/* Code below does not work since it is positioned on z-index -1 */
+/* .Start-Div h1:hover {
   text-shadow: 1px -1px orange, 2px -1px orange, 3px -2px orange, 4px -2px orange, 5px -3px orange, 6px -3px orange, 7px -4px orange, 18px -8px rgba(0, 0, 0, 0.3);
-}
+} */
 /*----------------------
     End of WakeLite
 ----------------------*/
@@ -145,6 +148,7 @@ Footer
     Start of Who Are We
 ----------------------*/
 .WhoAreWe-Full {
+  background-color: white;
   height: 100%;
   min-height: 100vh;
   width: 100vw;
@@ -196,6 +200,7 @@ Footer
     Start of Our Mission
 ----------------------*/
 .OurMission-Full {
+  background-color: white;
   height: 100%;
   min-height: 100vh;
   width: 100vw;
@@ -259,10 +264,14 @@ Footer
     Start of About Us
 ----------------------*/
 .TheCrew-Div {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
   padding-bottom: 50px;
 }
 .TheCrew-Div h1 {
-  margin-top: 5%;
+  padding-top: 5%;
   text-align: center;
 }
 .cardstacktop {
@@ -343,7 +352,7 @@ Footer
 #Divider4 {
   width: 100%;
   height: 6vh;
-  margin-top: 18vh;
+  /* margin-top: 18vh; */
   background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
@@ -351,6 +360,7 @@ Footer
     Start of Contact
 ----------------------*/
 .Contact-Full {
+  background-color: white;
   height: 100%;
   min-height: 100vh;
   width: 100vw;
@@ -552,7 +562,7 @@ Footer
   }
 
   .WhoAreWe-Full {
-    margin: 10vh 0;
+    padding: 10vh 0;
   }
   .WhoAreWe-Div {
     display: flex;
@@ -568,7 +578,7 @@ Footer
   } 
 
   .OurMission-Full {
-    margin: 12vh 0;
+    padding: 12vh 0;
   }
   .OurMission-Div {
     display: flex;
@@ -580,11 +590,11 @@ Footer
   }
 
   .TheCrew-Div {
-    margin: 12vh 0;
+    padding: 12vh 0;
   }
 
   .Contact-Full {
-    margin: 10vh 0;
+    padding: 10vh 0;
   }
   .Contact-Header1 {
     margin-bottom: 2vh;
