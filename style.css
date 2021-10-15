@@ -354,7 +354,7 @@ Footer
   min-height: 100vh;
   width: 100vw;
   background-color: white;
-  padding: 10vh 0 1vh 0;
+  padding: 10vh 0 10vh 0;
 }
 .TheCrew-Div h1 {
   /* padding-top: 5%; */
@@ -513,7 +513,7 @@ Footer
   outline: none;
   border: black solid 1px;
   border-radius: 8px;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 .Contact-Form input:not(.Contact-Submit input):focus, textarea:focus, .Contact-Submit input:hover {
   border: orange solid 1px;
@@ -531,6 +531,7 @@ Footer
   padding: 12px 18px;
   margin-top: 15px;
   background-color: orange;
+  border: rgb(255, 150, 0) solid 2px;
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
@@ -600,6 +601,24 @@ Footer
 /*----------------------
     End of Footer
 ----------------------*/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-left {
+  transform: translateX(-80%)
+}
+.fade-right {
+  transform: translateX(80%);
+}
+.fade-down {
+  transform: translateY(10%);
+}
+.fade-in.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /*----------------------
     Start of Mobile Responsiveness
@@ -690,6 +709,9 @@ Footer
   #WhoAreWe-br {
     display: block;
   }
+  #WhoAreWe-br-mobile-gone {
+    display: none;
+  }
   #WhoAreWe-Section4 {
     display: none;
   } 
@@ -726,7 +748,7 @@ Footer
 
   /* Start of About Us */
   .TheCrew-Div {
-    padding: 12vh 0;
+    padding: 12vh 0 20vh 0;
   }
   /* End of About Us */
 
@@ -767,6 +789,17 @@ Footer
     width: 24px;
   }
   /* End of Button Skip */
+
+
+  .fade-left {
+    transform: translateX(-10%)
+  }
+  .fade-right {
+    transform: translateX(10%);
+  }
+  .fade-down {
+    transform: translateY(5%);
+  }
 }
 /*----------------------
     End of Mobile Responsiveness
