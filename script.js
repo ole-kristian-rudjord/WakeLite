@@ -39,8 +39,8 @@ window.onload = function() {
 // Fade-in
     const faders = document.querySelectorAll(".fade-in");
     const appearOptions = {
-        threshold: 0.5,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px"
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {

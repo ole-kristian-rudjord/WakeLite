@@ -255,13 +255,16 @@ Footer
   display: flex;
 }
 .TheProduct-Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 55%;
 }
 .TheProduct-Image img {
   width: 100%;
 }
 .TheProduct-Info {
-  width: 30%;
+  width: 29%;
   margin: 50px;
   display: flex;
   align-items: center;
@@ -535,11 +538,13 @@ Footer
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(50%);
   transition: 1s;
 }
 #Contact-Response.Response-Active {
-  opacity: 100%;
+  opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 #Contact-Reset {
   display: none;
