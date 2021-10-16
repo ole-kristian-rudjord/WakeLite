@@ -40,7 +40,7 @@ window.onload = function() {
     const faders = document.querySelectorAll(".fade-in");
     const appearOptions = {
         threshold: 0,
-        rootMargin: "0px 0px -250px 0px"
+        rootMargin: "0px 0px -200px 0px"
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
@@ -59,4 +59,27 @@ window.onload = function() {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     })
+
+
+// Navbar highlight on scroll
+    // const sections = document.querySelectorAll("section");
+    // const navbarLinksForScroll = document.querySelectorAll(".Navbar-Links");
+
+    // window.addEventListener('scroll', ()=> {
+    //     let current = '';
+    //     sections.forEach( section => {
+    //         const sectionTop = section.offsetTop;
+    //         const sectionHeight = section.clientHeight;
+    //         if (scrollY >= sectionTop) {
+    //             current = section.getAttribute('id');
+    //         }
+    //     })
+
+    //     navbarLinksForScroll.forEach( a => {
+    //         a.classList.remove('active');
+    //         if(a.classList.contains(current)) {
+    //             a.classList.add('active');
+    //         }
+    //     })
+    // })
 };
