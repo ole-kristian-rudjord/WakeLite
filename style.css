@@ -588,6 +588,7 @@ Footer
   display: inline-flex;
 }
 #Footer-Socials a {
+  padding: 0 8px;
   font-size: 1.1rem;
   padding: 2px 5px;
   margin: 0 2px;
