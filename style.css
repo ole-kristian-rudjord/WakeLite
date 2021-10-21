@@ -3,8 +3,8 @@
 * {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -296,12 +296,12 @@ Footer
 .cardstacktop {
   display: flex;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
 .cardstackbot {
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
   margin: auto;
 }
 .flip-card {
@@ -383,9 +383,7 @@ Footer
 }
 .Contact-Header1 {
   font-size: 1.5rem;
-  margin-bottom: 1vh;
-  margin-top: 8vh;
-  margin: 0 30px;
+  margin: 8vh 30px 1vh 30px;
   text-align: center;
 }
 .Contact-Header1 span {
@@ -425,9 +423,7 @@ Footer
   flex-direction: column;
   height: 520px;
   justify-content: space-between;
-  margin-top: 4vh;
-  margin: 0 50px;
-  margin: auto;
+  margin: 4vh 50px 0 50px;
   max-width: 400px;
   padding: 0 16px;
 }
