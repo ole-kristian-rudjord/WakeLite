@@ -31,15 +31,15 @@ Footer
     Start of Navbar
 ----------------------*/
 .Navbar {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 7vh;
-  width: 100%;
   border-bottom: orange solid 2px;
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
 }
 .Logo {
@@ -47,52 +47,52 @@ Footer
   white-space: nowrap;
 }
 .Logo img {
-  width: 6vh;
   border-radius: 50%;
   transition: 1s;
+  width: 6vh;
 }
 .Logo img:hover {
   box-shadow: 0 0 15px 10px yellow;
 }
 .Logo a {
+  align-items: center;
+  border-radius: 50px;
+  color: black;
+  display: flex;
   font-size: 1.5rem;
   font-weight: 800;
-  text-decoration: none;
-  color: black;
   padding-right: 18px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
+  text-decoration: none;
   transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
 }
 .Logo a:hover {
-  color: white;
   background-color: orange;
+  color: white;
 }
 #Navbar-ul {
   margin-right: 10%;
 }
 .Navbar li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 .Navbar-Links {
+  border-radius: 20px;
+  color: black;
   font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
-  color: black;
   padding: 8px 10px;
-  border-radius: 20px;
+  text-decoration: none;
   transition: background-color 0.6s, color 0.3s;
 }
 .Navbar-Links:hover {
-  color: white;
   background-color: orange;
+  color: white;
 }
 
 .Navbar-Links.active {
-  color: white;
   background-color: orange;
+  color: white;
 }
 
 #Navbar-Drop-Down {
@@ -106,20 +106,20 @@ Footer
     Start of Button Skip
 ----------------------*/
 .Button-Skip-Up {
-  position: fixed;
-  margin: 12px 8px;
-  border-radius: 16px;
   background-color: orange;
-  bottom: 0;
-  right: 0;
+  border-radius: 16px;
   border: rgb(255, 150, 0) solid 2px;
+  bottom: 0;
+  margin: 12px 8px;
+  position: fixed;
+  right: 0;
 }
 .Button-Skip-Up img {
-  padding: 8px;
-  width: 24px;
-  transform: rotate(-90deg);
   filter: invert(100%);
+  padding: 8px;
+  transform: rotate(-90deg);
   transition: 0.2s;
+  width: 24px;
 }
 .Button-Skip-Up img:hover {
   width: 30px;
@@ -135,37 +135,36 @@ Footer
   height: 100vh;
 }
 .Start-Div img {
+  height: 120%;
+  margin-left: -15%;
+  margin-top: -5%;
   object-fit: cover;
   position: fixed;
   width: 115%;
-  margin-left: -15%;
-  margin-top: -5%;
-  height: 120%;
   z-index: -10;
 }
 .Start-Div h1 {
-  font-size: 3.2rem;
-  line-height: 3.5rem;
-  position: fixed;
   color: white;
+  font-size: 3.2rem;
   font-weight: 800;
-  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
-  margin-top: 20vh;
+  line-height: 3.5rem;
   margin-left: 60%;
-  /* transition: 1s; */
+  margin-top: 20vh;
+  position: fixed;
+  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
   z-index: -9;
 }
 .Start-Div h2 {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px rgba(255, 166, 0, 0.5);
   color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-left: 60%;
+  margin-top: 55vh;
   position: fixed;
   text-align: center;
+  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px rgba(255, 166, 0, 0.5);
   z-index: -9;
-  margin-top: 55vh;
-  margin-left: 60%;
 }
 /*----------------------
     End of WakeLite
@@ -181,35 +180,35 @@ Footer
     Start of Who Are We
 ----------------------*/
 .WhoAreWe-Full {
+  align-items: center;
   background-color: white;
+  display: flex;
   height: 100%;
+  justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .WhoAreWe-Div {
   display: grid;
-  grid-template-columns: 50% 50%;
   gap: 40px 40px;
+  grid-template-columns: 50% 50%;
   justify-content: center;
 }
 .WhoAreWe-Section {
   margin: auto;
 }
 .WhoAreWe-Div img {
-  width: 100%;
   max-width: 450px;
+  width: 100%;
 }
 #WhoAreWe-Section3 {
   text-align: center;
 }
 #WhoAreWe-p-Start {
-  text-align: center;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 2.5rem;
+  text-align: center;
 }
 #WhoAreWe-p1 {
   font-size: 1.2rem;
@@ -231,29 +230,29 @@ Footer
 ----------------------*/
 
 #Divider2 {
-  width: 100%;
-  height: 6vh;
   background: linear-gradient(5deg, orange 20%, yellow 100%);
+  height: 6vh;
+  width: 100%;
 }
 
 /*----------------------
     Start of The Product
 ----------------------*/
 .TheProduct-Full {
+  align-items: center;
   background-color: white;
+  display: flex;
   height: 100%;
+  justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .TheProduct-Div {
   display: flex;
 }
 .TheProduct-Image {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   width: 55%;
 }
@@ -261,11 +260,11 @@ Footer
   width: 100%;
 }
 .TheProduct-Info {
-  width: 29%;
-  margin: 50px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  margin: 50px;
+  width: 29%;
 }
 .TheProduct-Info p {
   line-height: 2.2rem;
@@ -276,20 +275,20 @@ Footer
 ----------------------*/
 
 #Divider4 {
-  width: 100%;
-  height: 6vh;
   background: linear-gradient(5deg, orange 20%, yellow 100%);
+  height: 6vh;
+  width: 100%;
 }
 
 /*----------------------
     Start of About Us
 ----------------------*/
 .AboutUs-Full {
+  background-color: white;
   height: 100%;
   min-height: 100vh;
-  width: 100vw;
-  background-color: white;
   padding: 10vh 0 8vh 0;
+  width: 100vw;
 }
 .AboutUs-Full h1 {
   text-align: center;
@@ -301,46 +300,46 @@ Footer
 }
 .cardstackbot {
   display: flex;
-  margin: auto;
   justify-content: center;
   margin-top: 10vh;
+  margin: auto;
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
   height: 300px;
-  perspective: 1000px;
   margin: 0 1.2%;
+  perspective: 1000px;
+  width: 300px;
 }
 .flip-card-inner {
-  position: relative;
-  width: 300px;
   height: 300px;
+  position: relative;
   text-align: center;
-  transition: transform 0.8s;
   transform-style: preserve-3d;
+  transition: transform 0.8s;
+  width: 300px;
 }
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 .flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   -webkit-backface-visibility: hidden; /* safari */
   backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 .flip-card-back {
-  border: orange solid 2px;
   border-radius: 10px;
+  border: orange solid 2px;
   color: white;
   transform: rotateY(180deg);
 }
 .flip-card-back h1 {
-  margin: 15% 0 7% 0;
   color: black;
   font-size: 1.7rem;
+  margin: 15% 0 7% 0;
 }
 .social {
   display: grid;
@@ -352,9 +351,9 @@ Footer
   width: 38%;
 }
 .social a {
-  transition: 0.3s ease-out;
   border-radius: 10px;
   border: transparent solid 2px;
+  transition: 0.3s ease-out;
 }
 .social a:hover {
   border: orange solid 2px;
@@ -364,49 +363,49 @@ Footer
 ----------------------*/
 
 #Divider5 {
-  width: 100%;
-  height: 6vh;
   background: linear-gradient(5deg, orange 20%, yellow 100%);
+  height: 6vh;
+  width: 100%;
 }
 
 /*----------------------
     Start of Contact
 ----------------------*/
 .Contact-Full {
+  align-items: center;
   background-color: white;
-  height: 100%;
-  min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
 }
 .Contact-Header1 {
-  text-align: center;
-  margin: 0 30px;
-  margin-top: 8vh;
-  margin-bottom: 1vh;
   font-size: 1.5rem;
+  margin-bottom: 1vh;
+  margin-top: 8vh;
+  margin: 0 30px;
+  text-align: center;
 }
 .Contact-Header1 span {
   display: inline-block;
 }
 .Contact-Header2 {
-  text-align: center;
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 0 50px;
+  text-align: center;
 }
 .Contact-Header2 span {
   display: inline-block;
   white-space: nowrap;
 }
 .Contact-Header3 {
-  text-align: center;
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 0 120px;
+  text-align: center;
 }
 .Contact-Header3 span {
   display: inline-block;
@@ -421,27 +420,27 @@ Footer
   font-weight: 400;
 }
 .Contact-Form {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
   height: 520px;
-  padding: 0 16px;
-  margin: auto;
-  margin: 0 50px;
+  justify-content: space-between;
   margin-top: 4vh;
+  margin: 0 50px;
+  margin: auto;
+  max-width: 400px;
+  padding: 0 16px;
 }
 .Contact-Form input,
 textarea {
-  font-size: 1rem;
-  width: 100%;
-  padding: 16px;
   background-color: white;
-  outline: none;
-  border: black solid 1px;
   border-radius: 8px;
+  border: black solid 1px;
+  font-size: 1rem;
+  outline: none;
+  padding: 16px;
   transition: 0.3s;
+  width: 100%;
 }
 .Contact-Form input:not(.Contact-Submit input):focus,
 textarea:focus,
@@ -450,28 +449,28 @@ textarea:focus,
   box-shadow: orange 0 0 0 1px;
 }
 .Contact-Submit {
+  min-width: 100px;
   text-align: center;
   width: 30%;
-  min-width: 100px;
 }
 .Contact-Submit input {
   cursor: pointer;
 }
 #Contact-Response {
-  padding: 12px 18px;
-  margin-top: 15px;
   background-color: orange;
-  border: rgb(255, 150, 0) solid 2px;
   border-radius: 8px;
+  border: rgb(255, 150, 0) solid 2px;
+  margin-top: 15px;
   opacity: 0;
-  visibility: hidden;
+  padding: 12px 18px;
   transform: translateY(50%);
   transition: 1s;
+  visibility: hidden;
 }
 #Contact-Response.Response-Active {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0);
+  visibility: visible;
 }
 #Contact-Reset {
   display: none;
@@ -484,19 +483,19 @@ textarea:focus,
     Start of Footer
 ----------------------*/
 .Footer {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  bottom: 0;
-  width: 100%;
-  height: 8vh;
   background-color: white;
   border-top: orange solid 2px;
+  bottom: 0;
+  display: flex;
+  height: 8vh;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .Footer-Div {
+  color: black;
   display: inline-flex;
   font-size: 1rem;
-  color: black;
 }
 .Footer-Div a {
   color: black;
@@ -509,16 +508,16 @@ textarea:focus,
   display: inline-flex;
 }
 #Footer-Socials ul {
-  list-style: none;
   display: inline-flex;
+  list-style: none;
 }
 #Footer-Socials a {
-  padding: 0 8px;
-  font-size: 1.1rem;
-  padding: 2px 5px;
-  margin: 0 2px;
   border-radius: 8px;
   border: transparent solid 2px;
+  font-size: 1.1rem;
+  margin: 0 2px;
+  padding: 0 8px;
+  padding: 2px 5px;
   transition: 0.2s;
 }
 #Footer-Socials a:hover {
@@ -535,6 +534,7 @@ textarea:focus,
     End of Footer
 ----------------------*/
 
+/* Start of fading classes for JS fading */
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease, transform 1s ease;
@@ -552,6 +552,7 @@ textarea:focus,
   opacity: 1;
   transform: translateX(0);
 }
+/* End of fading classes for JS fading */
 
 /*----------------------
     Start of Mobile Responsiveness
@@ -564,19 +565,19 @@ textarea:focus,
     transform: translateX(-50%);
   }
   #Navbar-ul {
-    position: absolute;
-    justify-content: space-evenly;
-    flex-direction: column;
     align-items: center;
-    height: 93vh;
-    width: 50%;
     background-color: orange;
+    display: none;
+    flex-direction: column;
+    height: 93vh;
+    justify-content: space-evenly;
+    margin: 0;
+    position: absolute;
     right: 0;
     top: 7vh;
-    margin: 0;
     transform: translateX(100%);
-    display: none;
     transition: 0.4s ease-in-out;
+    width: 50%;
   }
   #Navbar-ul.Navbar-active {
     display: flex;
@@ -588,36 +589,36 @@ textarea:focus,
     padding: 25px;
   }
   #Navbar-Drop-Down {
-    position: absolute;
-    display: block;
     cursor: pointer;
-    right: 0;
+    display: block;
     padding: 18px;
+    position: absolute;
+    right: 0;
     width: 28px;
   }
   /* End of Navbar */
 
   /* Start of Wake Lite */
   .Start-Div img {
-    width: inherit;
     height: 100%;
     margin-left: -300px;
+    width: inherit;
   }
   .Start-Div h1 {
     font-size: 2.2rem;
     line-height: 2.5rem;
-    white-space: nowrap;
-    text-align: center;
-    margin-top: 7vh;
     margin-left: 50%;
+    margin-top: 7vh;
+    text-align: center;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
   .Start-Div h2 {
+    bottom: 3vh;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    margin-top: 0;
-    bottom: 3vh;
     margin-left: 50%;
+    margin-top: 0;
     transform: translateX(-50%);
     white-space: nowrap;
   }
@@ -649,12 +650,12 @@ textarea:focus,
 
   /* Start of The Product */
   .TheProduct-Div {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .TheProduct-Info {
-    width: 80%;
     margin: 0;
+    width: 80%;
   }
   .TheProduct-Info br {
     display: none;
