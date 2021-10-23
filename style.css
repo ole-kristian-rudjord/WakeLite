@@ -475,6 +475,97 @@ textarea:focus,
     End of Contact
 ----------------------*/
 
+#Divider6 {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+.Order-Full {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  gap: 50px;
+}
+
+.Order-Images {
+  outline: red dotted 1px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Order-Images img {
+  outline: orange dotted 1px;
+  display: block;
+  width: 100%;
+}
+
+.Order-Options {
+  outline: blue dotted 1px;
+  width: 30%;
+}
+.Order-Options h1 {
+  margin-bottom: 30px;
+}
+
+.Order-Size {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Order-Size-Buttons {
+  cursor: pointer;
+  padding: 5px;
+  background-color: gray;
+  border: black solid 1px;
+}
+
+.Order-Top-Color {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Order-Top-Color-Buttons {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border: black solid 1px;
+  border-radius: 50%;
+}
+
+.Order-Bottom-Color {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Order-Bottom-Color-Buttons {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border: black solid 1px;
+  border-radius: 50%;
+}
+
+.Order-ExtraFeatures {
+  display: flex;
+  flex-direction: column;
+}
+.Order-ExtraFeatures-Feature {
+  display: flex;
+  margin-bottom: 10px;
+}
+.Order-ExtraFeatures-Checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+  margin-left: 5px;
+}
+
 /*----------------------
     Start of Footer
 ----------------------*/
