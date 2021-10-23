@@ -307,11 +307,14 @@ Footer
   position: absolute;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
 }
 .flip-card-product-front {
   color: black;
 }
 .flip-card-product-back {
+  align-items: center;
   color: white;
   transform: rotateY(180deg);
 }
