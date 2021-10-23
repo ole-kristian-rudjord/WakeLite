@@ -289,7 +289,7 @@ Footer
 .flip-card-product {
   background-color: transparent;
   width: 500px;
-  height: 600px;
+  height: 700px;
   perspective: 1000px;
 }
 .flip-card-product-inner {
