@@ -9,6 +9,14 @@ window.onload = function() {
             navbarUl.classList.toggle('Navbar-active2');
         }, 0);
     });
+
+// Order top color
+    const ProductTop = document.getElementById('Order-Img-Top');
+    const ProductTopBlue = document.getElementById('Order-Top-Color-Blue');
+
+    ProductTopBlue.addEventListener('click', () => {
+        ProductTop.classList.toggle('Top-Blue');
+    });
     
 
 // Remove Drop-Down menu after clicking a link
