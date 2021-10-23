@@ -495,9 +495,27 @@ textarea:focus,
 .Order-Images {
   outline: red dotted 1px;
   width: 30%;
+  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+#Order-Images-Div {
+  width: 90%;
+  transition: 0.6s ease;
+}
+#Order-Images-Div.Small {
+  width: 80%;
+  transition: 0.6s ease;
+}
+#Order-Images-Div.Medium {
+  width: 90%;
+  transition: 0.6s ease;
+}
+#Order-Images-Div.Large {
+  width: 100%;
+  transition: 0.6s ease;
 }
 .Order-Images img {
   outline: orange dotted 1px;
@@ -507,7 +525,10 @@ textarea:focus,
 
 .Order-Options {
   outline: blue dotted 1px;
-  width: 30%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 300px;
 }
 .Order-Options h1 {
   margin-bottom: 30px;
@@ -515,32 +536,66 @@ textarea:focus,
 
 .Order-Size {
   display: flex;
+  flex-direction: column;
+  gap: 2px;
   margin-bottom: 30px;
 }
 .Order-Size-Buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
   padding: 5px;
-  background-color: gray;
-  border: black solid 1px;
+  border: transparent solid 2px;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s ease;
 }
+.Order-Size-Buttons:hover {
+  border: orange solid 2px;
+}
+.Order-Size-Buttons span {
+  font-variant-numeric: tabular-nums;
+}
+/* .Order-Images-Dimensions {
+  font-size: 0.95rem;
+  display: none;
+  margin-bottom: 30px;
+} */
+/* #Order-Images-Dimensions-Small.Active {
+  display: flex;
+}
+#Order-Images-Dimensions-Medium.Active {
+  display: flex;
+}
+#Order-Images-Dimensions-Large.Active {
+  display: flex;
+} */
 
 .Order-Top-Color {
-  display: flex;
   margin-bottom: 30px;
+}
+.Order-Top-Colors {
+  display: flex;
+  justify-content: space-between;
 }
 .Order-Top-Color-Buttons {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: gray;
-  border: black solid 1px;
   border-radius: 50%;
+  outline: transparent solid 2px;
+  transition: 0.1s ease-in;
+}
+.Order-Top-Color-Buttons:hover {
+  outline: black solid 3px;
 }
 
 #Order-Top-Color-Blue {
   background-color: blue;
 }
 #Order-Img-Top.Top-Blue {
+  transition: 0.6s;
   filter: sepia(8%) saturate(2000%) hue-rotate(160deg);
 }
 
@@ -548,6 +603,7 @@ textarea:focus,
   background-color: rgb(255, 172, 255);
 }
 #Order-Img-Top.Top-Pink {
+  transition: 0.6s;
   filter: sepia(10%) saturate(3000%) hue-rotate(290deg);
 }
 
@@ -555,6 +611,7 @@ textarea:focus,
   background-color: orange;
 }
 #Order-Img-Top.Top-Orange {
+  transition: 0.6s;
   filter: sepia(10%) saturate(3000%) hue-rotate(340deg);
 }
 
@@ -562,27 +619,77 @@ textarea:focus,
   background-color: yellow;
 }
 #Order-Img-Top.Top-Yellow {
+  transition: 0.6s;
   filter: sepia(10%) saturate(3000%) hue-rotate(4deg);
 }
 
 #Order-Top-Color-White {
   background-color: White;
+  outline: rgb(190, 190, 190) solid 2px;
+}
+#Order-Top-Color-White:hover {
+  outline: black solid 3px;
 }
 #Order-Img-Top.Top-White {
+  transition: 0.6s;
   filter: inherit;
 }
 
 .Order-Bottom-Color {
-  display: flex;
   margin-bottom: 30px;
+}
+.Order-Bottom-Colors {
+  display: flex;
+  justify-content: space-between;
 }
 .Order-Bottom-Color-Buttons {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: gray;
-  border: black solid 1px;
+  outline: transparent solid 2px;
   border-radius: 50%;
+  transition: 0.1s ease-in;
+}
+.Order-Bottom-Color-Buttons:hover {
+  outline: black solid 3px;
+}
+#Order-Bottom-Color-Blue {
+  background-color: blue;
+}
+#Order-Img-Bottom.Bottom-Blue {
+  filter: sepia(8%) saturate(2000%) hue-rotate(160deg);
+}
+
+#Order-Bottom-Color-Pink {
+  background-color: rgb(255, 172, 255);
+}
+#Order-Img-Bottom.Bottom-Pink {
+  filter: sepia(10%) saturate(3000%) hue-rotate(290deg);
+}
+
+#Order-Bottom-Color-Orange {
+  background-color: orange;
+}
+#Order-Img-Bottom.Bottom-Orange {
+  filter: sepia(10%) saturate(3000%) hue-rotate(340deg);
+}
+
+#Order-Bottom-Color-Yellow {
+  background-color: yellow;
+}
+#Order-Img-Bottom.Bottom-Yellow {
+  filter: sepia(10%) saturate(3000%) hue-rotate(4deg);
+}
+
+#Order-Bottom-Color-White {
+  background-color: White;
+  outline: rgb(190, 190, 190) solid 2px;
+}
+#Order-Bottom-Color-White:hover {
+  outline: black solid 3px;
+}
+#Order-Img-Bottom.Bottom-White {
+  filter: inherit;
 }
 
 .Order-ExtraFeatures {
