@@ -530,8 +530,8 @@ textarea:focus,
   flex-direction: column;
   align-items: center; */
   width: 300px;
-  min-width: 220px;
-  margin-right: 30px;
+  min-width: 190px;
+  margin-right: 10px;
 }
 .Order-Options h1 {
   margin-bottom: 45px;
@@ -997,6 +997,41 @@ textarea:focus,
     width: 24px;
   }
   /* End of Button Skip */
+
+  .Order-Full {
+    gap: 10px;
+  }
+  .Order-Images {
+    margin-left: 8px;
+  }
+  #Order-Images-Div {
+    width: 95%;
+  }
+  #Order-Images-Div.Small {
+    width: 90%;
+  }
+  #Order-Images-Div.Medium {
+    width: 95%;
+  }
+  .Order-Options h1 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  .Order-Size-Buttons span {
+    font-size: 0.9rem;
+  }
+  .Order-Size {
+    margin-bottom: 20px;
+  }
+  .Order-Top-Color {
+    margin-bottom: 20px;
+  }
+  .Order-Bottom-Color {
+    margin-bottom: 40px;
+  }
+  .Order-ExtraFeatures {
+    width: 93%;
+  }
 }
 /*----------------------
     End of Mobile Responsiveness
