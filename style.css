@@ -489,17 +489,18 @@ textarea:focus,
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  gap: 50px;
+  gap: 6%;
 }
 
 .Order-Images {
-  outline: red dotted 1px;
-  width: 30%;
+  /* outline: red dotted 1px; */
+  width: 550px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 5%;
 }
 #Order-Images-Div {
   width: 90%;
@@ -518,41 +519,47 @@ textarea:focus,
   transition: 0.6s ease;
 }
 .Order-Images img {
-  outline: orange dotted 1px;
+  /* outline: orange dotted 1px; */
   display: block;
   width: 100%;
 }
 
 .Order-Options {
-  outline: blue dotted 1px;
+  /* outline: blue dotted 1px; */
   /* display: flex;
   flex-direction: column;
   align-items: center; */
   width: 300px;
+  min-width: 220px;
+  margin-right: 30px;
 }
 .Order-Options h1 {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+  line-height: 2.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .Order-Size {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-bottom: 30px;
+  gap: 8px;
+  margin-bottom: 40px;
 }
 .Order-Size-Buttons {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  padding: 5px;
-  border: transparent solid 2px;
+  padding: 6px;
+  outline: transparent solid 2px;
   border-radius: 8px;
   width: 100%;
-  transition: 0.5s ease;
+  transition: 0.1s ease-in;
 }
 .Order-Size-Buttons:hover {
-  border: orange solid 2px;
+  outline: orange solid 3px;
 }
 .Order-Size-Buttons span {
   font-variant-numeric: tabular-nums;
@@ -573,7 +580,8 @@ textarea:focus,
 } */
 
 .Order-Top-Color {
-  margin-bottom: 30px;
+  margin: 0 6px 40px 6px;
+  line-height: 2rem;
 }
 .Order-Top-Colors {
   display: flex;
@@ -583,7 +591,7 @@ textarea:focus,
   cursor: pointer;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border-radius: 8px;
   outline: transparent solid 2px;
   transition: 0.1s ease-in;
 }
@@ -591,8 +599,20 @@ textarea:focus,
   outline: black solid 3px;
 }
 
+#Order-Top-Color-White {
+  background-color: White;
+  outline: rgb(190, 190, 190) solid 2px;
+}
+#Order-Top-Color-White:hover {
+  outline: black solid 3px;
+}
+#Order-Img-Top.Top-White {
+  transition: 0.6s;
+  filter: inherit;
+}
+
 #Order-Top-Color-Blue {
-  background-color: blue;
+  background-color: rgb(110, 209, 255);
 }
 #Order-Img-Top.Top-Blue {
   transition: 0.6s;
@@ -612,7 +632,7 @@ textarea:focus,
 }
 #Order-Img-Top.Top-Orange {
   transition: 0.6s;
-  filter: sepia(10%) saturate(3000%) hue-rotate(340deg);
+  filter: sepia(10%) saturate(3000%) hue-rotate(330deg);
 }
 
 #Order-Top-Color-Yellow {
@@ -620,23 +640,20 @@ textarea:focus,
 }
 #Order-Img-Top.Top-Yellow {
   transition: 0.6s;
-  filter: sepia(10%) saturate(3000%) hue-rotate(4deg);
+  filter: sepia(10%) saturate(4000%) hue-rotate(360deg);
 }
 
-#Order-Top-Color-White {
-  background-color: White;
-  outline: rgb(190, 190, 190) solid 2px;
+#Order-Top-Color-Green {
+  background-color: rgb(0, 201, 100);
 }
-#Order-Top-Color-White:hover {
-  outline: black solid 3px;
-}
-#Order-Img-Top.Top-White {
+#Order-Img-Top.Top-Green {
   transition: 0.6s;
-  filter: inherit;
+  filter: sepia(10%) saturate(4000%) hue-rotate(90deg);
 }
 
 .Order-Bottom-Color {
-  margin-bottom: 30px;
+  margin: 0 6px 45px 6px;
+  line-height: 2rem;
 }
 .Order-Bottom-Colors {
   display: flex;
@@ -647,38 +664,11 @@ textarea:focus,
   width: 30px;
   height: 30px;
   outline: transparent solid 2px;
-  border-radius: 50%;
+  border-radius: 8px;
   transition: 0.1s ease-in;
 }
 .Order-Bottom-Color-Buttons:hover {
   outline: black solid 3px;
-}
-#Order-Bottom-Color-Blue {
-  background-color: blue;
-}
-#Order-Img-Bottom.Bottom-Blue {
-  filter: sepia(8%) saturate(2000%) hue-rotate(160deg);
-}
-
-#Order-Bottom-Color-Pink {
-  background-color: rgb(255, 172, 255);
-}
-#Order-Img-Bottom.Bottom-Pink {
-  filter: sepia(10%) saturate(3000%) hue-rotate(290deg);
-}
-
-#Order-Bottom-Color-Orange {
-  background-color: orange;
-}
-#Order-Img-Bottom.Bottom-Orange {
-  filter: sepia(10%) saturate(3000%) hue-rotate(340deg);
-}
-
-#Order-Bottom-Color-Yellow {
-  background-color: yellow;
-}
-#Order-Img-Bottom.Bottom-Yellow {
-  filter: sepia(10%) saturate(3000%) hue-rotate(4deg);
 }
 
 #Order-Bottom-Color-White {
@@ -689,23 +679,96 @@ textarea:focus,
   outline: black solid 3px;
 }
 #Order-Img-Bottom.Bottom-White {
+  transition: 0.6s;
   filter: inherit;
+}
+
+#Order-Bottom-Color-Blue {
+  background-color: rgb(110, 209, 255);
+}
+#Order-Img-Bottom.Bottom-Blue {
+  transition: 0.6s;
+  filter: sepia(8%) saturate(2000%) hue-rotate(160deg);
+}
+
+#Order-Bottom-Color-Pink {
+  background-color: rgb(255, 172, 255);
+}
+#Order-Img-Bottom.Bottom-Pink {
+  transition: 0.6s;
+  filter: sepia(10%) saturate(3000%) hue-rotate(290deg);
+}
+
+#Order-Bottom-Color-Orange {
+  background-color: orange;
+}
+#Order-Img-Bottom.Bottom-Orange {
+  transition: 0.6s;
+  filter: sepia(10%) saturate(3000%) hue-rotate(330deg);
+}
+
+#Order-Bottom-Color-Yellow {
+  background-color: yellow;
+}
+#Order-Img-Bottom.Bottom-Yellow {
+  transition: 0.6s;
+  filter: sepia(10%) saturate(4000%) hue-rotate(360deg);
+}
+
+#Order-Bottom-Color-Green {
+  background-color: rgb(0, 201, 100);
+}
+#Order-Img-Bottom.Bottom-Green {
+  transition: 0.6s;
+  filter: sepia(10%) saturate(4000%) hue-rotate(90deg);
+}
+
+.Order-Bottom-Color-Buttons.Active {
+  outline: black solid 3px;
 }
 
 .Order-ExtraFeatures {
   display: flex;
   flex-direction: column;
+  width: 52%;
+  margin-left: 6px;
 }
 .Order-ExtraFeatures-Feature {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 .Order-ExtraFeatures-Checkbox {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  border: black solid 1px;
-  margin-left: 5px;
+  border: black solid 2px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Checkmark-TD {
+  color: green;
+  display: none;
+}
+#Checkmark-TD.Active {
+  display: block;
+}
+
+#Order-Img-TD-Div {
+  position: relative;
+}
+#Order-Img-TD {
+  display: none;
+  width: 60%;
+  margin-top: -23%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+#Order-Img-TD.Active {
+  display: block;
 }
 
 /*----------------------
