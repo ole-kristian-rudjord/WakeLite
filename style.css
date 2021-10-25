@@ -81,9 +81,9 @@ Footer
   color: black;
   font-size: 1rem;
   font-weight: 700;
-  padding: 8px 10px;
+  padding: 8px 12px;
   text-decoration: none;
-  transition: background-color 0.6s, color 0.3s;
+  transition: background-color 0.6s ease, color 0.3s;
 }
 .Navbar-Links:hover {
   background-color: orange;
@@ -366,119 +366,6 @@ Footer
   background: linear-gradient(5deg, orange 20%, yellow 100%);
   height: 6vh;
   width: 100%;
-}
-
-/*----------------------
-    Start of Contact
-----------------------*/
-.Contact-Full {
-  align-items: center;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-}
-.Contact-Header1 {
-  font-size: 1.5rem;
-  margin: 8vh 30px 1vh 30px;
-  text-align: center;
-}
-.Contact-Header1 span {
-  display: inline-block;
-}
-.Contact-Header2 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  margin: 0 50px;
-  text-align: center;
-}
-.Contact-Header2 span {
-  display: inline-block;
-  white-space: nowrap;
-}
-.Contact-Header3 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  margin: 0 120px;
-  text-align: center;
-}
-.Contact-Header3 span {
-  display: inline-block;
-  white-space: nowrap;
-}
-.Contact-Header3 a {
-  color: black;
-  text-decoration: none;
-}
-.Contact-Header3 #phone-span {
-  font-size: 1rem;
-  font-weight: 400;
-}
-.Contact-Form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 520px;
-  justify-content: space-between;
-  margin: 4vh 50px 0 50px;
-  max-width: 400px;
-  padding: 0 16px;
-}
-.Contact-Form input,
-textarea {
-  background-color: white;
-  border-radius: 8px;
-  border: black solid 1px;
-  font-size: 1rem;
-  outline: none;
-  padding: 16px;
-  transition: 0.3s;
-  width: 100%;
-}
-.Contact-Form input:not(.Contact-Submit input):focus,
-textarea:focus,
-.Contact-Submit input:hover {
-  border: orange solid 1px;
-  box-shadow: orange 0 0 0 1px;
-}
-.Contact-Submit {
-  min-width: 100px;
-  text-align: center;
-  width: 30%;
-}
-.Contact-Submit input {
-  cursor: pointer;
-}
-#Contact-Response {
-  background-color: orange;
-  border-radius: 8px;
-  border: rgb(255, 150, 0) solid 2px;
-  margin-top: 15px;
-  opacity: 0;
-  padding: 12px 18px;
-  transform: translateY(50%);
-  transition: 1s;
-  visibility: hidden;
-}
-#Contact-Response.Response-Active {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
-}
-#Contact-Reset {
-  display: none;
-}
-/*----------------------
-    End of Contact
-----------------------*/
-
-#Divider6 {
-  width: 100%;
-  height: 6vh;
-  background: linear-gradient(5deg, orange 20%, yellow 100%);
 }
 
 .Order-Full {
@@ -770,6 +657,122 @@ textarea:focus,
 #Order-Img-TD.Active {
   display: block;
 }
+/*----------------------
+    End of Contact
+----------------------*/
+
+#Divider6 {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+/*----------------------
+    Start of Contact
+----------------------*/
+.Contact-Full {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+.Contact-Header1 {
+  font-size: 1.5rem;
+  margin: 8vh 30px 1vh 30px;
+  text-align: center;
+}
+.Contact-Header1 span {
+  display: inline-block;
+}
+.Contact-Header2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 50px;
+  text-align: center;
+}
+.Contact-Header2 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 120px;
+  text-align: center;
+}
+.Contact-Header3 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 a {
+  color: black;
+  text-decoration: none;
+}
+.Contact-Header3 #phone-span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.Contact-Form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  justify-content: space-between;
+  margin: 4vh 50px 0 50px;
+  max-width: 400px;
+  padding: 0 16px;
+}
+.Contact-Form input,
+textarea {
+  background-color: white;
+  border-radius: 8px;
+  border: black solid 1px;
+  font-size: 1rem;
+  outline: none;
+  padding: 16px;
+  transition: 0.3s;
+  width: 100%;
+}
+.Contact-Form input:not(.Contact-Submit input):focus,
+textarea:focus,
+.Contact-Submit input:hover {
+  border: orange solid 1px;
+  box-shadow: orange 0 0 0 1px;
+}
+.Contact-Submit {
+  min-width: 100px;
+  text-align: center;
+  width: 30%;
+}
+.Contact-Submit input {
+  cursor: pointer;
+}
+#Contact-Response {
+  background-color: orange;
+  border-radius: 8px;
+  border: rgb(255, 150, 0) solid 2px;
+  margin-top: 15px;
+  opacity: 0;
+  padding: 12px 18px;
+  transform: translateY(50%);
+  transition: 1s;
+  visibility: hidden;
+}
+#Contact-Response.Response-Active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+#Contact-Reset {
+  display: none;
+}
+/*----------------------
+    End of Contact
+----------------------*/
 
 /*----------------------
     Start of Footer
@@ -960,6 +963,43 @@ textarea:focus,
   }
   /* End of About Us */
 
+  /* Start of Order */
+  .Order-Full {
+    gap: 10px;
+  }
+  .Order-Images {
+    margin-left: 8px;
+  }
+  #Order-Images-Div {
+    width: 95%;
+  }
+  #Order-Images-Div.Small {
+    width: 90%;
+  }
+  #Order-Images-Div.Medium {
+    width: 95%;
+  }
+  .Order-Options h1 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  .Order-Size-Buttons span {
+    font-size: 0.9rem;
+  }
+  .Order-Size {
+    margin-bottom: 20px;
+  }
+  .Order-Top-Color {
+    margin-bottom: 20px;
+  }
+  .Order-Bottom-Color {
+    margin-bottom: 40px;
+  }
+  .Order-ExtraFeatures {
+    width: 93%;
+  }
+  /* End of Order */
+
   /* Start of Contact */
   .Contact-Full {
     padding: 10vh 0;
@@ -997,41 +1037,6 @@ textarea:focus,
     width: 24px;
   }
   /* End of Button Skip */
-
-  .Order-Full {
-    gap: 10px;
-  }
-  .Order-Images {
-    margin-left: 8px;
-  }
-  #Order-Images-Div {
-    width: 95%;
-  }
-  #Order-Images-Div.Small {
-    width: 90%;
-  }
-  #Order-Images-Div.Medium {
-    width: 95%;
-  }
-  .Order-Options h1 {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-  }
-  .Order-Size-Buttons span {
-    font-size: 0.9rem;
-  }
-  .Order-Size {
-    margin-bottom: 20px;
-  }
-  .Order-Top-Color {
-    margin-bottom: 20px;
-  }
-  .Order-Bottom-Color {
-    margin-bottom: 40px;
-  }
-  .Order-ExtraFeatures {
-    width: 93%;
-  }
 }
 /*----------------------
     End of Mobile Responsiveness

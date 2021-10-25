@@ -19,6 +19,7 @@
       <li><a class="Navbar-Links" href="#WhoAreWe">Who Are We?</a></li>
       <li><a class="Navbar-Links" href="#TheProduct">The Product</a></li>
       <li><a class="Navbar-Links" href="#AboutUs">Our Team</a></li>
+      <li><a class="Navbar-Links" href="#Order">Order Now</a></li>
       <li><a class="Navbar-Links" href="#Contact">Contact</a></li>
     </ul>
     <img id="Navbar-Drop-Down" src="img/three-horizontal-lines.svg" alt="">
@@ -212,28 +213,8 @@
   
   <div class="Dividers" id="Divider5"></div>
 
-  <section class="Contact-Full" id="Contact">
-    <h1 class="Contact-Header1"><span>Want to get in</span> <span>contact with us?</span></h1>
-    <h2 class="Contact-Header2"><span>Send us an Email through</span> <span>the contact form below</span></h2>
-    <h3 class="Contact-Header3"><span>or call us at </span> <span><a href="tel:+47939-20-001">(+47) 939 20 001</a> <span id="phone-span">(9am-7pm)</span></span></h3>
-    <form  class="Contact-Form fade-in fade-down" id="Contact-Form" onsubmit="return false">
-        <input type="text" name="Name"  id="Input-Name" placeholder="Name:">
-        <input type="text" name="Email" id="Input-Email" placeholder="Email:">
-        <textarea name="Message" id="Textarea-Message" placeholder="Write here:" cols="40" rows="15"></textarea>
-        <div class="Contact-Submit" id="Contact-Submit">
-            <input type="submit" value="Submit">
-        </div>
-        <input type="reset" id="Contact-Reset">
-    </form>
-    <div>
-      <p id="Contact-Response">Thank you for contacting us :)</p>
-    </div>
-  </section>
-
-  <div class="Dividers" id="Divider6"></div>
-
   <section class="Order-Full" id="Order">
-    <div class="Order-Images">
+    <div class="Order-Images fade-in fade-left">
       <div id="Order-Images-Div">
         <img src="img/ProductTop.png" alt="" id="Order-Img-Top">
         <img src="img/ProductBottom.png" alt="" id="Order-Img-Bottom">
@@ -242,7 +223,7 @@
         </div>
       </div>
     </div>
-    <div class="Order-Options">
+    <div class="Order-Options fade-in fade-right">
       <h1>Customize and order your WakeLite now!</h1>
       <div class="Order-Size">
         <!-- <p>Size:</p> -->
@@ -296,7 +277,27 @@
       </div>
     </div>
   </section>
-  
+
+  <div class="Dividers" id="Divider6"></div>
+
+  <section class="Contact-Full" id="Contact">
+    <h1 class="Contact-Header1"><span>Want to get in</span> <span>contact with us?</span></h1>
+    <h2 class="Contact-Header2"><span>Send us an Email through</span> <span>the contact form below</span></h2>
+    <h3 class="Contact-Header3"><span>or call us at </span> <span><a href="tel:+47939-20-001">(+47) 939 20 001</a> <span id="phone-span">(9am-7pm)</span></span></h3>
+    <form  class="Contact-Form fade-in fade-down" id="Contact-Form" onsubmit="return false">
+        <input type="text" name="Name"  id="Input-Name" placeholder="Name:">
+        <input type="text" name="Email" id="Input-Email" placeholder="Email:">
+        <textarea name="Message" id="Textarea-Message" placeholder="Write here:" cols="40" rows="15"></textarea>
+        <div class="Contact-Submit" id="Contact-Submit">
+            <input type="submit" value="Submit">
+        </div>
+        <input type="reset" id="Contact-Reset">
+    </form>
+    <div>
+      <p id="Contact-Response">Thank you for contacting us :)</p>
+    </div>
+  </section>
+
   <footer class="Footer">
       <div class="Footer-Div">
         <p>Address:&#160&#160</p>
