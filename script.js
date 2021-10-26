@@ -56,7 +56,12 @@ window.onload = function() {
     const ProductTopOrange = document.getElementById('Order-Top-Color-Orange');
     const ProductTopYellow = document.getElementById('Order-Top-Color-Yellow');
     const ProductTopWhite = document.getElementById('Order-Top-Color-White');
+    const ProductTopGreen = document.getElementById('Order-Top-Color-Green');
 
+    ProductTopWhite.addEventListener('click', () => {
+        ProductTop.className = "";
+        ProductTop.classList.add('Top-White');
+    });
     ProductTopBlue.addEventListener('click', () => {
         ProductTop.className = "";
         ProductTop.classList.add('Top-Blue');
@@ -73,10 +78,11 @@ window.onload = function() {
         ProductTop.className = "";
         ProductTop.classList.add('Top-Yellow');
     });
-    ProductTopWhite.addEventListener('click', () => {
+    ProductTopGreen.addEventListener('click', () => {
         ProductTop.className = "";
-        ProductTop.classList.add('Top-White');
+        ProductTop.classList.add('Top-Green');
     });
+    
 
 // Order bottom color
     const ProductBottom = document.getElementById('Order-Img-Bottom');
@@ -85,7 +91,12 @@ window.onload = function() {
     const ProductBottomOrange = document.getElementById('Order-Bottom-Color-Orange');
     const ProductBottomYellow = document.getElementById('Order-Bottom-Color-Yellow');
     const ProductBottomWhite = document.getElementById('Order-Bottom-Color-White');
+    const ProductBottomGreen = document.getElementById('Order-Bottom-Color-Green');
 
+    ProductBottomWhite.addEventListener('click', () => {
+        ProductBottom.className = "";
+        ProductBottom.classList.add('Bottom-White');
+    });
     ProductBottomBlue.addEventListener('click', () => {
         ProductBottom.className = "";
         ProductBottom.classList.add('Bottom-Blue');
@@ -102,21 +113,34 @@ window.onload = function() {
         ProductBottom.className = "";
         ProductBottom.classList.add('Bottom-Yellow');
     });
-    ProductBottomWhite.addEventListener('click', () => {
+    ProductBottomGreen.addEventListener('click', () => {
         ProductBottom.className = "";
-        ProductBottom.classList.add('Bottom-White');
+        ProductBottom.classList.add('Bottom-Green');
     });
+    
 
-    // var colorTopButton = document.getElementsByClassName("Order-Top-Color-Buttons");
-    // var imageTop = document.getElementById('Order-Img-Top');
+
+    // var colorBottomButtons = document.getElementsByClassName("Order-Bottom-Color-Buttons");
     // var i;
 
-    // for (i = 0; i < colorTopButton.length; i++) {
-    //     colorTopButton[i].addEventListener("click", function() {
-    //         imageTop.classList.toggle("Top");
+    // for (i = 0; i < colorBottomButtons.length; i++) {
+    //     colorBottomButtons[i].addEventListener("click", function() {
+    //         this.classList.toggle('Active');
     //     });
     // };
     
+// Order Checkbox 
+    const touchDisplayImage = document.getElementById('Order-Img-TD');
+    const touchDisplayButton = document.getElementById('Order-ExtraFeatures-TD');
+    const touchDisplayCheckmark = document.getElementById('Checkmark-TD');
+
+    const phoneChargerButton = document.getElementById('Order-ExtraFeatures-PC');
+
+    touchDisplayButton.addEventListener('click', () => {
+        touchDisplayImage.classList.toggle('Active');
+        touchDisplayCheckmark.classList.toggle('Active');
+    });
+
 
 // Remove Drop-Down menu after clicking a link
     var navbarLinks = document.getElementsByClassName('Navbar-Links');
