@@ -288,7 +288,7 @@ Footer
 }
 .flip-card-product {
   background-color: transparent;
-  width: 500px;
+  width: 100%;
   height: 700px;
   perspective: 1000px;
 }
@@ -318,6 +318,7 @@ Footer
   color: white;
   transform: rotateY(180deg);
 }
+
 /*----------------------
     End of Product Features
 ----------------------*/
@@ -1014,6 +1015,17 @@ textarea:focus,
   }
   /* End of The Product */
 
+  /*Start of The Product-Features*/
+
+  .flip-card-product-inner {
+    height: auto;
+  }
+  .front-image, .back-image {
+    width: 100%;
+    height: auto;
+  }
+  /*End of The Product-Features*/
+  
   /* Start of About Us */
   .TheCrew-Div {
     padding: 12vh 0 20vh 0;
