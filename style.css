@@ -288,7 +288,7 @@ Footer
 }
 .flip-card-product {
   background-color: transparent;
-  width: 100%;
+  width: 50vw;
   height: 700px;
   perspective: 1000px;
 }
@@ -1002,6 +1002,10 @@ textarea:focus,
   /* End of Who Are We */
 
   /* Start of The Product */
+  .flip-card-product {
+    margin-left: 10%;
+    width: 100%;
+  }
   .TheProduct-Div {
     align-items: center;
     flex-direction: column;
