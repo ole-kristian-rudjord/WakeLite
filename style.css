@@ -22,6 +22,8 @@ Button Skip
 WakeLite
 Who Are We
 The Product
+The Product Features
+Order
 About Us
 Contact
 Footer
@@ -288,41 +290,46 @@ Footer
 }
 .flip-card-product {
   background-color: transparent;
-  width: 30vw;
-  height: 700px;
+  width: 900px;
+  height: 680px;
   perspective: 1000px;
+  /* outline: black dotted 2px; */
+  margin-right: -100px;
 }
 .flip-card-product-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 900px;
+  height: 680px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  /* outline: red dotted 2px; */
 }
 .flip-card-product:hover .flip-card-product-inner {
   transform: rotateY(180deg);
 }
-.flip-card-product-front, .flip-card-product-back {
+.flip-card-product-front,
+.flip-card-product-back {
   position: absolute;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
 }
-.flip-card-product-front {
-  color: black;
-}
 .flip-card-product-back {
   align-items: center;
   color: white;
   transform: rotateY(180deg);
 }
+.flip-card-product-inner img {
+  /* outline: blue dotted 2px; */
+  height: 100%;
+  width: 100%;
+}
 
 /*----------------------
     End of Product Features
 ----------------------*/
-
 
 #Divider4 {
   background: linear-gradient(5deg, orange 20%, yellow 100%);
@@ -408,6 +415,9 @@ Footer
 .social a:hover {
   border: orange solid 2px;
 }
+.flip-card-mobile-display {
+  display: none;
+}
 /*----------------------
     End of About Us
 ----------------------*/
@@ -418,6 +428,9 @@ Footer
   width: 100%;
 }
 
+/*----------------------
+    Start of Order
+----------------------*/
 .Order-Full {
   align-items: center;
   background-color: white;
@@ -456,24 +469,11 @@ Footer
   transition: 0.6s ease;
 }
 .Order-Images img {
-  /* outline: orange dotted 1px; */
   display: block;
   width: 100%;
 }
-/* #Order-Img-Top {
-  position: relative;
-  z-index: 1;
-}
-#Order-Img-Bottom {
-  margin-top: -14px;
-  margin-left: -3px;
-} */
 
 .Order-Options {
-  /* outline: blue dotted 1px; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   width: 300px;
   min-width: 190px;
   margin-right: 10px;
@@ -509,20 +509,6 @@ Footer
 .Order-Size-Buttons span {
   font-variant-numeric: tabular-nums;
 }
-/* .Order-Images-Dimensions {
-  font-size: 0.95rem;
-  display: none;
-  margin-bottom: 30px;
-} */
-/* #Order-Images-Dimensions-Small.Active {
-  display: flex;
-}
-#Order-Images-Dimensions-Medium.Active {
-  display: flex;
-}
-#Order-Images-Dimensions-Large.Active {
-  display: flex;
-} */
 
 .Order-Top-Color {
   margin: 0 6px 40px 6px;
@@ -675,13 +661,12 @@ Footer
 .Order-ExtraFeatures {
   display: flex;
   flex-direction: column;
-  width: 52%;
-  margin-left: 6px;
+  width: 86%;
+  margin-bottom: 35px;
 }
 .Order-ExtraFeatures-Feature {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  justify-content: space-around;
 }
 .Order-ExtraFeatures-Checkbox {
   cursor: pointer;
@@ -701,6 +686,13 @@ Footer
   display: block;
 }
 
+#Order-Now-100 {
+  visibility: hidden;
+}
+#Order-Now-100.Active {
+  visibility: visible;
+}
+
 #Order-Img-TD-Div {
   position: relative;
 }
@@ -715,8 +707,42 @@ Footer
 #Order-Img-TD.Active {
   display: block;
 }
+
+.Order-Now {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.8rem;
+  outline: transparent solid 1px;
+  border: black solid 2px;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px 0;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.1s ease-in;
+}
+.Order-Now span {
+  font-weight: 700;
+}
+.Order-Now:hover {
+  border: orange solid 2px;
+  outline: orange solid 2px;
+}
+#Order-Now-799 {
+  display: inline-block;
+}
+#Order-Now-899 {
+  display: none;
+}
+#Order-Now-799.Active {
+  display: none;
+}
+#Order-Now-899.Active {
+  display: inline-block;
+}
 /*----------------------
-    End of Contact
+    End of Order
 ----------------------*/
 
 #Divider6 {
@@ -1030,6 +1056,9 @@ textarea:focus,
 
   /*Start of The Product-Features*/
   .TheProductFeatures-Full {
+    display: none;
+  }
+  /* .TheProductFeatures-Full {
     align-items: center;
     background-color: white;
     display: flex;
@@ -1041,21 +1070,23 @@ textarea:focus,
   .flip-card-product {
     background-color: transparent;
     width: 100%;
-    height: auto;
+    height: auto; 
     perspective: 1000px;
   }
   .flip-card-product-inner {
     height: auto;
   }
   .flip-card-product:hover .flip-card-product-inner {
-    transform:none;
+    transform: none;
   }
-  .flip-card-product-front, .flip-card-product-back {
+  .flip-card-product-front,
+  .flip-card-product-back {
     position: relative;
-    -webkit-backface-visibility: visible; /* Safari */
+    -webkit-backface-visibility: visible;
     backface-visibility: visible;
   }
-  .front-image, .back-image {
+  .front-image,
+  .back-image {
     width: 100%;
     height: auto;
   }
@@ -1066,12 +1097,21 @@ textarea:focus,
     align-items: center;
     color: white;
     transform: none;
-  }
+  } */
   /*End of The Product-Features*/
-  
+
   /* Start of About Us */
-  .TheCrew-Div {
-    padding: 12vh 0 20vh 0;
+  .AboutUs-Full {
+    padding: 14vh 0 12vh 0;
+  }
+  .flip-card-mobile-none {
+    display: none;
+  }
+  .flip-card-mobile-display {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
   }
   /* End of About Us */
 
@@ -1106,9 +1146,6 @@ textarea:focus,
   }
   .Order-Bottom-Color {
     margin-bottom: 40px;
-  }
-  .Order-ExtraFeatures {
-    width: 93%;
   }
   /* End of Order */
 

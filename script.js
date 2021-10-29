@@ -117,28 +117,22 @@ window.onload = function() {
         ProductBottom.className = "";
         ProductBottom.classList.add('Bottom-Green');
     });
-    
 
-
-    // var colorBottomButtons = document.getElementsByClassName("Order-Bottom-Color-Buttons");
-    // var i;
-
-    // for (i = 0; i < colorBottomButtons.length; i++) {
-    //     colorBottomButtons[i].addEventListener("click", function() {
-    //         this.classList.toggle('Active');
-    //     });
-    // };
     
 // Order Checkbox 
     const touchDisplayImage = document.getElementById('Order-Img-TD');
     const touchDisplayButton = document.getElementById('Order-ExtraFeatures-TD');
     const touchDisplayCheckmark = document.getElementById('Checkmark-TD');
-
-    const phoneChargerButton = document.getElementById('Order-ExtraFeatures-PC');
+    const orderNow100 = document.getElementById('Order-Now-100');
+    const orderNow799 = document.getElementById('Order-Now-799');
+    const orderNow899 = document.getElementById('Order-Now-899');
 
     touchDisplayButton.addEventListener('click', () => {
         touchDisplayImage.classList.toggle('Active');
         touchDisplayCheckmark.classList.toggle('Active');
+        orderNow100.classList.toggle('Active');
+        orderNow799.classList.toggle('Active');
+        orderNow899.classList.toggle('Active');
     });
 
 
