@@ -1029,13 +1029,43 @@ textarea:focus,
   /* End of The Product */
 
   /*Start of The Product-Features*/
-
+  .TheProductFeatures-Full {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .flip-card-product {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    perspective: 1000px;
+  }
   .flip-card-product-inner {
     height: auto;
+  }
+  .flip-card-product:hover .flip-card-product-inner {
+    transform:none;
+  }
+  .flip-card-product-front, .flip-card-product-back {
+    position: relative;
+    -webkit-backface-visibility: visible; /* Safari */
+    backface-visibility: visible;
   }
   .front-image, .back-image {
     width: 100%;
     height: auto;
+  }
+  .flip-card-product-front {
+    visibility: visible;
+  }
+  .flip-card-product-back {
+    align-items: center;
+    color: white;
+    transform: none;
   }
   /*End of The Product-Features*/
   
