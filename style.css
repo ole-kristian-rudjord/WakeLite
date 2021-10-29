@@ -188,7 +188,7 @@ Footer
   height: 100%;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .WhoAreWe-Div {
   display: grid;
@@ -247,7 +247,7 @@ Footer
   height: 100%;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .TheProduct-Div {
   display: flex;
@@ -286,7 +286,7 @@ Footer
   height: 100%;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .flip-card-product {
   background-color: transparent;
@@ -344,8 +344,8 @@ Footer
   background-color: white;
   height: 100%;
   min-height: 100vh;
-  padding: 10vh 0 8vh 0;
-  width: 100vw;
+  /* padding: 10vh 0 8vh 0; */
+  width: 100%;
 }
 .AboutUs-Full h1 {
   text-align: center;
@@ -438,7 +438,8 @@ Footer
   height: 100%;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  /* padding: 8vh 0; */
   gap: 6%;
 }
 
@@ -762,7 +763,7 @@ Footer
   height: 100%;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .Contact-Header1 {
   font-size: 1.5rem;
@@ -932,6 +933,47 @@ textarea:focus,
   transform: translateX(0);
 }
 /* End of fading classes for JS fading */
+
+/* Start of system scaling */
+@media (-webkit-min-device-pixel-ratio: 1.25) {
+  body {
+    zoom: 0.9;
+  }
+  section {
+    padding: 10vh 0;
+  }
+  .AboutUs-Full {
+    padding: 10vh 0 16vh 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  body {
+    zoom: 0.8;
+  }
+  section {
+    padding: 12vh 0;
+  }
+  .AboutUs-Full {
+    padding: 12vh 0 18vh 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75) {
+  body {
+    zoom: 0.65;
+  }
+  .Start-Div {
+    height: 120vh;
+  }
+  section {
+    padding: 14vh 0;
+  }
+  .AboutUs-Full {
+    padding: 14vh 0 22vh 0;
+  }
+}
+/* End of system scaling */
 
 /*----------------------
     Start of Mobile Responsiveness
