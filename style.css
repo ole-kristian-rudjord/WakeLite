@@ -199,6 +199,7 @@ Footer
   margin: auto;
 }
 .WhoAreWe-Div img {
+  display: block;
   max-width: 450px;
   width: 100%;
 }
@@ -1146,7 +1147,7 @@ textarea:focus,
 
   /* Start of About Us */
   .AboutUs-Full {
-    padding: 14vh 0 50vh 0;
+    padding: 14vh 0 35vh 0;
   }
   .flip-card-mobile-none {
     display: none;
