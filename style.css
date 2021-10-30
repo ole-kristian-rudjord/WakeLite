@@ -138,7 +138,6 @@ Footer
 }
 .Start-Div img {
   height: 120%;
-  margin-left: -15%;
   margin-top: -5%;
   object-fit: cover;
   position: fixed;
@@ -150,8 +149,8 @@ Footer
   font-size: 3.2rem;
   font-weight: 800;
   line-height: 3.5rem;
-  margin-left: 60%;
-  margin-top: 20vh;
+  margin-left: 57%;
+  margin-top: 25vh;
   position: fixed;
   text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
   z-index: -9;
@@ -161,8 +160,8 @@ Footer
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.5rem;
-  margin-left: 60%;
-  margin-top: 55vh;
+  margin-left: 57%;
+  margin-top: 57vh;
   position: fixed;
   text-align: center;
   text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px rgba(255, 166, 0, 0.5);
@@ -250,16 +249,14 @@ Footer
   width: 100%;
 }
 .TheProduct-Div {
+  margin-top: 10vh;
   display: flex;
 }
-.TheProduct-Image {
+.TheProduct-Video {
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 55%;
-}
-.TheProduct-Image img {
-  width: 100%;
+  width: 52%;
 }
 .TheProduct-Info {
   align-items: center;
@@ -342,8 +339,10 @@ Footer
 ----------------------*/
 .AboutUs-Full {
   background-color: white;
-  height: 100%;
+  height: 100vh;
+  object-fit: cover;
   min-height: 100vh;
+  padding-top: 10vh;
   /* padding: 10vh 0 8vh 0; */
   width: 100%;
 }
@@ -935,7 +934,7 @@ textarea:focus,
 /* End of fading classes for JS fading */
 
 /* Start of system scaling */
-@media (-webkit-min-device-pixel-ratio: 1.25) {
+/* @media (-webkit-min-device-pixel-ratio: 1.25) {
   body {
     zoom: 0.9;
   }
@@ -972,14 +971,13 @@ textarea:focus,
   .AboutUs-Full {
     padding: 14vh 0 22vh 0;
   }
-}
+} */
 /* End of system scaling */
 
 /*----------------------
     Start of Mobile Responsiveness
 ----------------------*/
-@media only screen and (max-width: 850px) {
-  /* Start of Navbar */
+@media only screen and (max-width: 1100px) {
   .Logo {
     display: absolute;
     margin-left: 50%;
@@ -1017,12 +1015,13 @@ textarea:focus,
     right: 0;
     width: 28px;
   }
-  /* End of Navbar */
+}
 
+@media only screen and (max-width: 850px) {
   /* Start of Wake Lite */
   .Start-Div img {
-    height: 100%;
-    margin-left: -300px;
+    height: inherit;
+    margin-left: -250px;
     width: inherit;
   }
   .Start-Div h1 {
@@ -1094,6 +1093,9 @@ textarea:focus,
   .TheProduct-Info br {
     display: none;
   }
+  .TheProduct-Video {
+    width: 90%;
+  }
   /* End of The Product */
 
   /*Start of The Product-Features*/
@@ -1144,7 +1146,7 @@ textarea:focus,
 
   /* Start of About Us */
   .AboutUs-Full {
-    padding: 14vh 0 12vh 0;
+    padding: 14vh 0 50vh 0;
   }
   .flip-card-mobile-none {
     display: none;

@@ -13,6 +13,9 @@ window.onload = function() {
         }, 0);
     });
 
+// Product video
+    document.getElementById('Product-Video').playbackRate = 0.4;
+
 // Order size
     const ProductSize = document.getElementById('Order-Images-Div');
 
