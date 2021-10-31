@@ -285,21 +285,21 @@ Footer
   display: flex;
   height: 100%;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100%;
 }
 .flip-card-product {
   background-color: transparent;
-  width: 900px;
-  height: 680px;
+  width: 800px;
+  height: 630px;
   perspective: 1000px;
   /* outline: black dotted 2px; */
-  margin-right: -100px;
+  margin-right: -150px;
 }
 .flip-card-product-inner {
   position: relative;
-  width: 900px;
-  height: 680px;
+  width: 800px;
+  height: 630px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
