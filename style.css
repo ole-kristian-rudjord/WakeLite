@@ -202,6 +202,7 @@ Footer
   display: block;
   max-width: 450px;
   width: 100%;
+  border-radius: 4px;
 }
 #WhoAreWe-Section3 {
   text-align: center;
@@ -258,6 +259,7 @@ Footer
   display: flex;
   justify-content: center;
   width: 52%;
+  border-radius: 0 4px 4px 0;
 }
 .TheProduct-Info {
   align-items: center;
@@ -409,11 +411,12 @@ Footer
 }
 .social a {
   border-radius: 10px;
-  border: transparent solid 2px;
-  transition: 0.3s ease-out;
+  padding: 1px 0;
+  outline: transparent solid 2px;
+  transition: 0.1s ease-in;
 }
 .social a:hover {
-  border: orange solid 2px;
+  outline: orange solid 3px;
 }
 .flip-card-mobile-display {
   display: none;
@@ -819,13 +822,14 @@ textarea {
   font-size: 1rem;
   outline: none;
   padding: 16px;
-  transition: 0.3s;
+  transition: 0.2s ease-in;
   width: 100%;
 }
 .Contact-Form input:not(.Contact-Submit input):focus,
 textarea:focus,
 .Contact-Submit input:hover {
   border: orange solid 1px;
+  outline: orange solid 1px;
   box-shadow: orange 0 0 0 1px;
 }
 .Contact-Submit {
