@@ -483,10 +483,14 @@ Footer
   margin-right: 10px;
 }
 .Order-Options h1 {
-  margin-bottom: 45px;
-  line-height: 2.2rem;
+  margin-bottom: 40px;
+  line-height: 2.1rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.Order-Options h1 span {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
