@@ -22,7 +22,7 @@ Button Skip
 WakeLite
 Who Are We
 The Product
-The Product Features
+  -The Product Features
 Order
 About Us
 Contact
@@ -293,7 +293,6 @@ Footer
   width: 800px;
   height: 630px;
   perspective: 1000px;
-  /* outline: black dotted 2px; */
   margin-right: -150px;
 }
 .flip-card-product-inner {
@@ -303,7 +302,6 @@ Footer
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  /* outline: red dotted 2px; */
 }
 .flip-card-product:hover .flip-card-product-inner {
   transform: rotateY(180deg);
@@ -322,7 +320,6 @@ Footer
   transform: rotateY(180deg);
 }
 .flip-card-product-inner img {
-  /* outline: blue dotted 2px; */
   height: 100%;
   width: 100%;
 }
@@ -332,100 +329,6 @@ Footer
 ----------------------*/
 
 #Divider4 {
-  background: linear-gradient(5deg, orange 20%, yellow 100%);
-  height: 6vh;
-  width: 100%;
-}
-
-/*----------------------
-    Start of About Us
-----------------------*/
-.AboutUs-Full {
-  background-color: white;
-  height: 100vh;
-  object-fit: cover;
-  min-height: 100vh;
-  padding-top: 10vh;
-  /* padding: 10vh 0 8vh 0; */
-  width: 100%;
-}
-.AboutUs-Full h1 {
-  text-align: center;
-}
-.cardstacktop {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
-}
-.cardstackbot {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-.flip-card {
-  background-color: transparent;
-  height: 300px;
-  margin: 0 1.2%;
-  perspective: 1000px;
-  width: 300px;
-}
-.flip-card-inner {
-  height: 300px;
-  position: relative;
-  text-align: center;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-  width: 300px;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front,
-.flip-card-back {
-  -webkit-backface-visibility: hidden; /* safari */
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.flip-card-back {
-  border-radius: 10px;
-  border: orange solid 2px;
-  color: white;
-  transform: rotateY(180deg);
-}
-.flip-card-back h1 {
-  color: black;
-  font-size: 1.7rem;
-  margin: 15% 0 7% 0;
-}
-.social {
-  display: grid;
-  font-size: 42px;
-  gap: 15px 15px;
-  grid-template-columns: 50% 50%;
-  justify-content: center;
-  margin: auto;
-  width: 38%;
-}
-.social a {
-  border-radius: 10px;
-  padding: 1px 0;
-  outline: transparent solid 2px;
-  transition: 0.1s ease-in;
-}
-.social a:hover {
-  outline: orange solid 3px;
-}
-.flip-card-mobile-display {
-  display: none;
-}
-/*----------------------
-    End of About Us
-----------------------*/
-
-#Divider5 {
   background: linear-gradient(5deg, orange 20%, yellow 100%);
   height: 6vh;
   width: 100%;
@@ -442,12 +345,10 @@ Footer
   justify-content: center;
   min-height: 100vh;
   width: 100%;
-  /* padding: 8vh 0; */
   gap: 6%;
 }
 
 .Order-Images {
-  /* outline: red dotted 1px; */
   width: 550px;
   height: 100vh;
   display: flex;
@@ -753,6 +654,99 @@ Footer
     End of Order
 ----------------------*/
 
+#Divider5 {
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+  height: 6vh;
+  width: 100%;
+}
+
+/*----------------------
+    Start of About Us
+----------------------*/
+.AboutUs-Full {
+  background-color: white;
+  height: 100vh;
+  object-fit: cover;
+  min-height: 100vh;
+  padding-top: 10vh;
+  width: 100%;
+}
+.AboutUs-Full h1 {
+  text-align: center;
+}
+.cardstacktop {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.cardstackbot {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.flip-card {
+  background-color: transparent;
+  height: 300px;
+  margin: 0 1.2%;
+  perspective: 1000px;
+  width: 300px;
+}
+.flip-card-inner {
+  height: 300px;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  width: 300px;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  -webkit-backface-visibility: hidden; /* safari */
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.flip-card-back {
+  border-radius: 10px;
+  border: orange solid 2px;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back h1 {
+  color: black;
+  font-size: 1.7rem;
+  margin: 15% 0 7% 0;
+}
+.social {
+  display: grid;
+  font-size: 42px;
+  gap: 15px 15px;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  margin: auto;
+  width: 38%;
+}
+.social a {
+  border-radius: 10px;
+  padding: 1px 0;
+  outline: transparent solid 2px;
+  transition: 0.1s ease-in;
+}
+.social a:hover {
+  outline: orange solid 3px;
+}
+.flip-card-mobile-display {
+  display: none;
+}
+/*----------------------
+    End of About Us
+----------------------*/
+
 #Divider6 {
   width: 100%;
   height: 6vh;
@@ -944,43 +938,43 @@ textarea:focus,
 
 /* Start of system scaling */
 /* @media (-webkit-min-device-pixel-ratio: 1.25) {
-  body {
-    zoom: 0.9;
+    body {
+      zoom: 0.9;
+    }
+    section {
+      padding: 10vh 0;
+    }
+    .AboutUs-Full {
+      padding: 10vh 0 16vh 0;
+    }
   }
-  section {
-    padding: 10vh 0;
-  }
-  .AboutUs-Full {
-    padding: 10vh 0 16vh 0;
-  }
-}
 
-@media (-webkit-min-device-pixel-ratio: 1.5) {
-  body {
-    zoom: 0.8;
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+    body {
+      zoom: 0.8;
+    }
+    section {
+      padding: 12vh 0;
+    }
+    .AboutUs-Full {
+      padding: 12vh 0 18vh 0;
+    }
   }
-  section {
-    padding: 12vh 0;
-  }
-  .AboutUs-Full {
-    padding: 12vh 0 18vh 0;
-  }
-}
 
-@media (-webkit-min-device-pixel-ratio: 1.75) {
-  body {
-    zoom: 0.65;
-  }
-  .Start-Div {
-    height: 120vh;
-  }
-  section {
-    padding: 14vh 0;
-  }
-  .AboutUs-Full {
-    padding: 14vh 0 22vh 0;
-  }
-} */
+  @media (-webkit-min-device-pixel-ratio: 1.75) {
+    body {
+      zoom: 0.65;
+    }
+    .Start-Div {
+      height: 120vh;
+    }
+    section {
+      padding: 14vh 0;
+    }
+    .AboutUs-Full {
+      padding: 14vh 0 22vh 0;
+    }
+  } */
 /* End of system scaling */
 
 /*----------------------
@@ -1107,66 +1101,11 @@ textarea:focus,
   }
   /* End of The Product */
 
-  /*Start of The Product-Features*/
+  /* Start of The Product-Features */
   .TheProductFeatures-Full {
     display: none;
   }
-  /* .TheProductFeatures-Full {
-    align-items: center;
-    background-color: white;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-  }
-  .flip-card-product {
-    background-color: transparent;
-    width: 100%;
-    height: auto; 
-    perspective: 1000px;
-  }
-  .flip-card-product-inner {
-    height: auto;
-  }
-  .flip-card-product:hover .flip-card-product-inner {
-    transform: none;
-  }
-  .flip-card-product-front,
-  .flip-card-product-back {
-    position: relative;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-  }
-  .front-image,
-  .back-image {
-    width: 100%;
-    height: auto;
-  }
-  .flip-card-product-front {
-    visibility: visible;
-  }
-  .flip-card-product-back {
-    align-items: center;
-    color: white;
-    transform: none;
-  } */
-  /*End of The Product-Features*/
-
-  /* Start of About Us */
-  .AboutUs-Full {
-    padding: 14vh 0 35vh 0;
-  }
-  .flip-card-mobile-none {
-    display: none;
-  }
-  .flip-card-mobile-display {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 80px;
-  }
-  /* End of About Us */
+  /* End of The Product-Features */
 
   /* Start of Order */
   .Order-Full {
@@ -1201,6 +1140,22 @@ textarea:focus,
     margin-bottom: 40px;
   }
   /* End of Order */
+
+  /* Start of About Us */
+  .AboutUs-Full {
+    height: inherit;
+    padding: 14vh 0 14vh 0;
+  }
+  .flip-card-mobile-none {
+    display: none;
+  }
+  .flip-card-mobile-display {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+  }
+  /* End of About Us */
 
   /* Start of Contact */
   .Contact-Full {

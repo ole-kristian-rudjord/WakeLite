@@ -1,4 +1,3 @@
-
 window.onload = function() {
     console.log("Welcome to the console :) \n-Ole Kristian Rudjord")
 
@@ -13,8 +12,20 @@ window.onload = function() {
         }, 0);
     });
 
+// Remove Drop-Down menu after clicking a link
+    var navbarLinks = document.getElementsByClassName('Navbar-Links');
+
+    for (var i = 0; i < navbarLinks.length; i++) {
+        navbarLinks[i].addEventListener('click', () => {
+            navbarUl.classList.remove('Navbar-active');
+            navbarUl.classList.remove('Navbar-active2');
+        });
+    };
+
+
 // Product video
     document.getElementById('Product-Video').playbackRate = 0.4;
+
 
 // Order size
     const ProductSize = document.getElementById('Order-Images-Div');
@@ -23,34 +34,18 @@ window.onload = function() {
     const ProductSizeMedium = document.getElementById('Order-Size-Medium');
     const ProductSizeLarge = document.getElementById('Order-Size-Large');
 
-    const ProductDimensionsSmall = document.getElementById('Order-Images-Dimensions-Small');
-    const ProductDimensionsMedium = document.getElementById('Order-Images-Dimensions-Medium');
-    const ProductDimensionsLarge = document.getElementById('Order-Images-Dimensions-Large');
-
-    // ProductDimensionsMedium.classList.add('Active');
-
     ProductSizeSmall.addEventListener('click', () => {
         ProductSize.className = "";
         ProductSize.classList.add('Small');
-        // ProductDimensionsSmall.classList.add('Active');
-        // ProductDimensionsMedium.classList.remove('Active');
-        // ProductDimensionsLarge.classList.remove('Active');
     });
     ProductSizeMedium.addEventListener('click', () => {
         ProductSize.className = "";
         ProductSize.classList.add('Medium');
-        // ProductDimensionsSmall.classList.remove('Active');
-        // ProductDimensionsMedium.classList.add('Active');
-        // ProductDimensionsLarge.classList.remove('Active');
     });
     ProductSizeLarge.addEventListener('click', () => {
         ProductSize.className = "";
         ProductSize.classList.add('Large');
-        // ProductDimensionsSmall.classList.remove('Active');
-        // ProductDimensionsMedium.classList.remove('Active');
-        // ProductDimensionsLarge.classList.add('Active');
     });
-
 
 // Order top color
     const ProductTop = document.getElementById('Order-Img-Top');
@@ -86,7 +81,6 @@ window.onload = function() {
         ProductTop.classList.add('Top-Green');
     });
     
-
 // Order bottom color
     const ProductBottom = document.getElementById('Order-Img-Bottom');
     const ProductBottomBlue = document.getElementById('Order-Bottom-Color-Blue');
@@ -121,7 +115,6 @@ window.onload = function() {
         ProductBottom.classList.add('Bottom-Green');
     });
 
-    
 // Order Checkbox 
     const touchDisplayImage = document.getElementById('Order-Img-TD');
     const touchDisplayButton = document.getElementById('Order-ExtraFeatures-TD');
@@ -138,17 +131,6 @@ window.onload = function() {
         orderNow899.classList.toggle('Active');
     });
 
-
-// Remove Drop-Down menu after clicking a link
-    var navbarLinks = document.getElementsByClassName('Navbar-Links');
-
-    for (var i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].addEventListener('click', () => {
-            navbarUl.classList.remove('Navbar-active');
-            navbarUl.classList.remove('Navbar-active2');
-        });
-    };
-    
 
 // Response and reset after contact submit
     const contactSubmit = document.getElementById('Contact-Form');
@@ -189,7 +171,7 @@ window.onload = function() {
     })
 
 
-// Navbar highlight on scroll
+// Navbar highlight on scroll (Does not work)
     // const sections = document.querySelectorAll("section");
     // const navbarLinksForScroll = document.querySelectorAll(".Navbar-Links");
 
