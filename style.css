@@ -323,7 +323,6 @@ Footer
   height: 100%;
   width: 100%;
 }
-
 /*----------------------
     End of Product Features
 ----------------------*/
@@ -935,47 +934,6 @@ textarea:focus,
   transform: translateX(0);
 }
 /* End of fading classes for JS fading */
-
-/* Start of system scaling */
-/* @media (-webkit-min-device-pixel-ratio: 1.25) {
-    body {
-      zoom: 0.9;
-    }
-    section {
-      padding: 10vh 0;
-    }
-    .AboutUs-Full {
-      padding: 10vh 0 16vh 0;
-    }
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 1.5) {
-    body {
-      zoom: 0.8;
-    }
-    section {
-      padding: 12vh 0;
-    }
-    .AboutUs-Full {
-      padding: 12vh 0 18vh 0;
-    }
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 1.75) {
-    body {
-      zoom: 0.65;
-    }
-    .Start-Div {
-      height: 120vh;
-    }
-    section {
-      padding: 14vh 0;
-    }
-    .AboutUs-Full {
-      padding: 14vh 0 22vh 0;
-    }
-  } */
-/* End of system scaling */
 
 /*----------------------
     Start of Mobile Responsiveness

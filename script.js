@@ -169,27 +169,4 @@ window.onload = function() {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     })
-
-
-// Navbar highlight on scroll (Does not work)
-    // const sections = document.querySelectorAll("section");
-    // const navbarLinksForScroll = document.querySelectorAll(".Navbar-Links");
-
-    // window.addEventListener('scroll', ()=> {
-    //     let current = '';
-    //     sections.forEach( section => {
-    //         const sectionTop = section.offsetTop;
-    //         const sectionHeight = section.clientHeight;
-    //         if (scrollY >= sectionTop) {
-    //             current = section.getAttribute('id');
-    //         }
-    //     })
-
-    //     navbarLinksForScroll.forEach( a => {
-    //         a.classList.remove('active');
-    //         if(a.classList.contains(current)) {
-    //             a.classList.add('active');
-    //         }
-    //     })
-    // })
 };
